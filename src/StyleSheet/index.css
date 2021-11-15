@@ -67,3 +67,6 @@ body {
 .auto-margin {
   margin: 0 auto !important;
 }
+.page-title {
+  text-align: center !important;
+}

@@ -95,7 +95,11 @@ const itemData = [
 const GalleryPage = () => {
   return (
     <Container>
-      <Typography variant="h3" color="primary.contrastText">
+      <Typography
+        variant="h3"
+        color="primary.contrastText"
+        className="page-title"
+      >
         Gallery
       </Typography>
       <SRLWrapper options={options}>
