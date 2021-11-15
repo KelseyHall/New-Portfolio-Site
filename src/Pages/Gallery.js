@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 
 import { SRLWrapper } from 'simple-react-lightbox';
 
@@ -94,16 +94,17 @@ const itemData = [
 
 const GalleryPage = () => {
   return (
-    <div>
+    <Container>
       <Typography variant="h3" color="primary.contrastText">
         Gallery
       </Typography>
       <SRLWrapper options={options}>
         <ImageList
-          sx={{ width: 500, height: 450 }}
+          sx={{ width: 500, height: '100%' }}
           variant="quilted"
           cols={4}
           rowHeight={121}
+          className="auto-margin"
         >
           {itemData.map((item) => (
             <ImageListItem
@@ -120,7 +121,7 @@ const GalleryPage = () => {
           ))}
         </ImageList>
       </SRLWrapper>
-    </div>
+    </Container>
   );
 };
 

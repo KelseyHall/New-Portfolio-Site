@@ -64,3 +64,6 @@ body {
 .float-left {
   float: left !important;
 }
+.auto-margin {
+  margin: 0 auto !important;
+}
