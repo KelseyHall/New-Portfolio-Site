@@ -1,9 +1,13 @@
 import React from 'react';
 import { Typography } from '@mui/material';
 
+import { SRLWrapper } from 'simple-react-lightbox';
+
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import theme from '../StyleSheet/theme';
 
+//structure of quilted image list
 function srcset(image, size, rows = 1, cols = 1) {
   return {
     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
@@ -12,6 +16,20 @@ function srcset(image, size, rows = 1, cols = 1) {
     }&fit=crop&auto=format&dpr=2 2x`,
   };
 }
+
+//adjustments to lightbox
+const options = {
+  settings: { overlayColor: `${theme.palette.secondary.dark}` },
+  buttons: {
+    showThumbnailsButton: false,
+    showDownloadButton: false,
+    showFullscreenButton: false,
+    showAutoplayButton: false,
+  },
+  caption: {
+    captionColor: `${theme.palette.secondary.contrastText}`,
+  },
+};
 
 const itemData = [
   {
@@ -80,26 +98,28 @@ const GalleryPage = () => {
       <Typography variant="h3" color="primary.contrastText">
         Gallery
       </Typography>
-      <ImageList
-        sx={{ width: 500, height: 450 }}
-        variant="quilted"
-        cols={4}
-        rowHeight={121}
-      >
-        {itemData.map((item) => (
-          <ImageListItem
-            key={item.img}
-            cols={item.cols || 1}
-            rows={item.rows || 1}
-          >
-            <img
-              {...srcset(item.img, 121, item.rows, item.cols)}
-              alt={item.title}
-              loading="lazy"
-            />
-          </ImageListItem>
-        ))}
-      </ImageList>
+      <SRLWrapper options={options}>
+        <ImageList
+          sx={{ width: 500, height: 450 }}
+          variant="quilted"
+          cols={4}
+          rowHeight={121}
+        >
+          {itemData.map((item) => (
+            <ImageListItem
+              key={item.img}
+              cols={item.cols || 1}
+              rows={item.rows || 1}
+            >
+              <img
+                {...srcset(item.img, 121, item.rows, item.cols)}
+                alt={item.title}
+                loading="lazy"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      </SRLWrapper>
     </div>
   );
 };

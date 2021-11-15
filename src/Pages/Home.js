@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container, ThemeProvider, Typography } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import LandscapeImg from '../img/017165F5-1BDF-4B8F-BB08-E7B1B790B57A.jpeg';
 import KelseySelfie from '../img/IMG_3475.jpeg';
-import theme from '../StyleSheet/theme';
 
 export const HomeBannerImg = () => {
   return (
