@@ -1,9 +1,16 @@
+import { Container, Typography } from '@mui/material';
+import { AboutMeSection, HomeBannerImg } from './Pages/Home';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Kelsey Hall's </h1>
+        <Container>
+          <Typography variant="h2">Kelsey Hall's</Typography>
+        </Container>
       </header>
+      <HomeBannerImg />
+      <AboutMeSection />
     </div>
   );
 }

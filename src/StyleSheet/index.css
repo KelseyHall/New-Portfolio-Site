@@ -1,0 +1,66 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+/* @font-face {
+  font-family: 'Amita';
+  src: url('../fonts/Amita/Amita-Bold.ttf') format('TrueType');
+}
+@font-face {
+  font-family: 'ArialHBS';
+  src: url('../fonts/ArialHB.ttc') format('TrueType');
+} */
+
+body::before {
+  content: '';
+  background-image: url('../img/background-leaves-top.png');
+  background-position: top 0 left -15%;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1000;
+}
+body::after {
+  content: '';
+  background-image: url('../img/background-leaves-bottom.png');
+  background-position: bottom 0 right -15%;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0;
+  z-index: -1000;
+}
+body {
+  background-color: #ebecea;
+  /* font-family: 'ArialHBS' !important; */
+}
+/* .Logo {
+  font-family: 'Amita' !important;
+  -webkit-text-stroke: 1px #ebecea !important;
+}
+.NavFont {
+  font-family: 'ArialHBS' !important;
+} */
+.float-left {
+  float: left !important;
+}
