@@ -18,20 +18,29 @@ export const HomeBannerImg = () => {
 
 export const AboutMeSection = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <Container className="About-Me-Container">
-        <Typography variant="h3" color="primary.contrastText">
-          About Me
-        </Typography>
-        <img
-          src={KelseySelfie}
-          alt="Kelsey's Selfie in the woods"
-          className="About-Me-Selfie float-left"
-        />
-        <Typography variant="body1" color="primary.contrastText">
-          {`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim at amet, parturient orci. Nibh urna commodo tortor dui eget erat commodo sit. Porttitor sed eget quis tortor sit. Sit bibendum euismod arcu est facilisis ac sit mattis varius. Amet, pellentesque tincidunt leo proin amet, integer sollicitudin nisl. Fusce est non nec quis urna ultrices vulputate. Maecenas eget turpis phasellus in orci, ultricies. Diam tortor, ornare sit sem nunc, lacus blandit. Turpis volutpat, malesuada cursus in vel enim, risus. Sit tortor arcu vitae semper leo sed. `}
-        </Typography>
-      </Container>
-    </ThemeProvider>
+    <Container className="About-Me-Container">
+      <Typography variant="h3" color="primary.contrastText">
+        About Me
+      </Typography>
+      <img
+        src={KelseySelfie}
+        alt="Kelsey's Selfie in the woods"
+        className="About-Me-Selfie float-left"
+      />
+      <Typography variant="body1" color="primary.contrastText">
+        {`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim at amet, parturient orci. Nibh urna commodo tortor dui eget erat commodo sit. Porttitor sed eget quis tortor sit. Sit bibendum euismod arcu est facilisis ac sit mattis varius. Amet, pellentesque tincidunt leo proin amet, integer sollicitudin nisl. Fusce est non nec quis urna ultrices vulputate. Maecenas eget turpis phasellus in orci, ultricies. Diam tortor, ornare sit sem nunc, lacus blandit. Turpis volutpat, malesuada cursus in vel enim, risus. Sit tortor arcu vitae semper leo sed. `}
+      </Typography>
+    </Container>
   );
 };
+
+const HomePage = () => {
+  return (
+    <div>
+      <HomeBannerImg />
+      <AboutMeSection />
+    </div>
+  );
+};
+
+export default HomePage;
