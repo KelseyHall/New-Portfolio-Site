@@ -106,7 +106,7 @@ const DisplayProjects = (item) => (
 );
 
 const ProjectsPage = () => {
-  return (
+  return designProjects.map(({ design, coding }) => (
     <Container>
       <Typography
         variant="h3"
@@ -115,29 +115,29 @@ const ProjectsPage = () => {
       >
         Projects
       </Typography>
-      {designProjects.map(({ design, coding }) => (
-        <Grid container spacing={2}>
-          <Typography
-            variant="h3"
-            color="primary.contrastText"
-            className="page-title"
-          >
-            Coding
-          </Typography>
-          {coding.map((item) => DisplayProjects(item))}
 
-          <Typography
-            variant="h3"
-            color="primary.contrastText"
-            className="page-title"
-          >
-            Design
-          </Typography>
-          {design.map((item) => DisplayProjects(item))}
-        </Grid>
-      ))}
+      <Typography
+        variant="h3"
+        color="primary.contrastText"
+        className="section-title"
+      >
+        Coding
+      </Typography>
+      <Grid container spacing={2}>
+        {coding.map((item) => DisplayProjects(item))}
+      </Grid>
+      <Typography
+        variant="h3"
+        color="primary.contrastText"
+        className="section-title"
+      >
+        Design
+      </Typography>
+      <Grid container spacing={2}>
+        {design.map((item) => DisplayProjects(item))}
+      </Grid>
     </Container>
-  );
+  ));
 };
 
 export default ProjectsPage;
