@@ -39,7 +39,7 @@ export const AboutMeSection = () => {
 
 const HomePage = () => {
   return (
-    <div>
+    <div style={{ position: 'absolute', top: '0', 'z-index': '-10' }}>
       <HomeBannerImg />
       <AboutMeSection />
     </div>
