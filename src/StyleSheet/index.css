@@ -39,6 +39,7 @@ body::before {
   left: 0px;
   z-index: -1000;
 }
+
 body::after {
   content: '';
   background-image: url('../img/background-leaves-bottom.png');
@@ -46,16 +47,33 @@ body::after {
   background-size: 60%;
   background-repeat: no-repeat;
   opacity: 0.3;
-
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0;
+  /* top: 0; */
+  right: 0;
+  bottom: 0;
+  /* left: 0; */
   z-index: -1000;
 }
+/* .bottom-background-img {
+  content: '';
+  background-image: url('../img/background-leaves-bottom.png');
+  background-position: top 0 right -15%;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  width: 50%;
+  height: 10%;
+  position: absolute;
+  top: 0px;
+  right: -10%;
+  bottom: -10%;
+  left: 0;
+  z-index: -1000;
+} */
 body {
-  background-color: #ebecea;
+  background-color: #ebecea !important;
   font-family: 'ArialHBS' !important;
 }
 .Logo {
