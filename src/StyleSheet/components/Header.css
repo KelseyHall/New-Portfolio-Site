@@ -2,3 +2,19 @@
   background: none !important;
   box-shadow: none !important;
 }
+
+.Nav-List {
+  list-style: none;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+/* .Nav-item {
+} */
+.MuiToolbar-root {
+  justify-content: space-between;
+}
+
+.MuiDrawer-paper {
+  background-color: #f6f6f6 !important;
+}
