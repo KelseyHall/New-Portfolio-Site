@@ -1,5 +1,6 @@
 .App-header {
   background: none !important;
+  padding: 5% 0;
   box-shadow: none !important;
 }
 
@@ -9,8 +10,14 @@
   width: 50%;
   justify-content: space-around;
 }
-/* .Nav-item {
-} */
+.Nav-item a {
+  padding: 0 5px;
+  color: #463301 !important;
+  text-decoration: none;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.5px #ebecea !important;
+  font-size: 24px !important;
+}
 .MuiToolbar-root {
   justify-content: space-between;
 }

@@ -12,7 +12,47 @@ import { Menu } from '@mui/icons-material';
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
+const NavList = () => {
+  return (
+    <List className="NavFont">
+      <ListItem className="Nav-item">
+        <NavLink to="/">Home</NavLink>
+      </ListItem>
+      <ListItem className="Nav-item">
+        <NavLink to="/gallery">Gallery</NavLink>
+      </ListItem>
+      <ListItem className="Nav-item">
+        <NavLink to="/projects">Projects</NavLink>
+      </ListItem>
+      <ListItem className="Nav-item">
+        <NavLink to="/contactme">Contact me</NavLink>
+      </ListItem>
+    </List>
+  );
+};
+
 const Header = () => {
+  const [state, setState] = useState({
+    mobileView: false,
+    drawerOpen: false,
+  });
+  const { mobileView, drawerOpen } = state;
+
+  useEffect(() => {
+    const setResponsiveness = () => {
+      return window.innerWidth < 900
+        ? setState((prevState) => ({ ...prevState, mobileView: true }))
+        : setState((prevState) => ({ ...prevState, mobileView: false }));
+    };
+
+    setResponsiveness();
+    window.addEventListener('resize', () => setResponsiveness());
+
+    return () => {
+      window.removeEventListener('resize', () => setResponsiveness());
+    };
+  }, []);
+
   const DisplayMobile = () => {
     const handleDrawerOpen = () =>
       setState((prevState) => ({ ...prevState, drawerOpen: true }));
@@ -48,20 +88,7 @@ const Header = () => {
           onClose={handleDrawerClose}
         >
           <div>
-            <List className="NavFont">
-              <ListItem className="Nav-item">
-                <NavLink to="/">Home</NavLink>
-              </ListItem>
-              <ListItem className="Nav-item">
-                <NavLink to="/gallery">Gallery</NavLink>
-              </ListItem>
-              <ListItem className="Nav-item">
-                <NavLink to="/projects">projects</NavLink>
-              </ListItem>
-              <ListItem className="Nav-item">
-                <NavLink to="/contactme">contact me</NavLink>
-              </ListItem>
-            </List>
+            <NavList />
           </div>
         </Drawer>
       </Toolbar>
@@ -83,36 +110,16 @@ const Header = () => {
             <NavLink to="/gallery">Gallery</NavLink>
           </li>
           <li className="Nav-item">
-            <NavLink to="/projects">projects</NavLink>
+            <NavLink to="/projects">Projects</NavLink>
           </li>
           <li className="Nav-item">
-            <NavLink to="/contactme">contact me</NavLink>
+            <NavLink to="/contactme">Contact me</NavLink>
           </li>
         </ul>
       </Toolbar>
     );
   };
 
-  const [state, setState] = useState({
-    mobileView: false,
-    drawerOpen: false,
-  });
-  const { mobileView, drawerOpen } = state;
-
-  useEffect(() => {
-    const setResponsiveness = () => {
-      return window.innerWidth < 900
-        ? setState((prevState) => ({ ...prevState, mobileView: true }))
-        : setState((prevState) => ({ ...prevState, mobileView: false }));
-    };
-
-    setResponsiveness();
-    window.addEventListener('resize', () => setResponsiveness());
-
-    return () => {
-      window.removeEventListener('resize', () => setResponsiveness());
-    };
-  }, []);
   return (
     <Container>
       <AppBar position="static" className="App-header">

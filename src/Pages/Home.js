@@ -9,7 +9,7 @@ export const HomeBannerImg = () => {
       <img
         alt="beautiful landscape of tea plantation in malaysia"
         src={LandscapeImg}
-        style={{ width: '100vw', 'z-index': '10' }}
+        style={{ width: '100vw', 'z-index': '10', 'margin-bottom': '5%' }}
       />
     </div>
   );

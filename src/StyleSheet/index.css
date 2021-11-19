@@ -24,6 +24,10 @@ code {
   font-family: 'ArialHBS';
   src: url('../fonts/ArialHB.ttc') format('TrueType');
 }
+@font-face {
+  font-family: 'Rancho';
+  src: url('../fonts/Rancho/Rancho-Regular.ttf') format('truetype');
+}
 
 body::before {
   content: '';
@@ -82,7 +86,7 @@ body {
 }
 .NavFont {
   font-family: 'ArialHBS' !important;
-  font-weight: bold !important;
+  /* font-weight: bold !important; */
 }
 .float-left {
   float: left !important;
@@ -91,5 +95,7 @@ body {
   margin: 0 auto !important;
 }
 .page-title {
+  font-family: 'Rancho' !important;
   text-align: center !important;
+  margin: 20px 0 !important;
 }
