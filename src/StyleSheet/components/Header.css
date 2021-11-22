@@ -18,7 +18,7 @@
   -webkit-text-stroke: 0.5px #ebecea !important;
   font-size: 24px !important;
 }
-.MuiToolbar-root {
+.App-header .MuiToolbar-root {
   justify-content: space-between;
 }
 

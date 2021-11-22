@@ -9,7 +9,7 @@ export const HomeBannerImg = () => {
       <img
         alt="beautiful landscape of tea plantation in malaysia"
         src={LandscapeImg}
-        style={{ width: '100vw', 'z-index': '10', 'margin-bottom': '5%' }}
+        style={{ width: '100vw', 'margin-bottom': '5%' }}
       />
     </div>
   );
@@ -39,7 +39,7 @@ export const AboutMeSection = () => {
 
 const HomePage = () => {
   return (
-    <div style={{ position: 'absolute', top: '0', 'z-index': '-10' }}>
+    <div style={{ position: '', top: '0' }}>
       <HomeBannerImg />
       <AboutMeSection />
     </div>
