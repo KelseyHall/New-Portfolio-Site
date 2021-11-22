@@ -99,6 +99,9 @@ body {
   text-align: center !important;
   margin: 20px 0 !important;
 }
+.secondary-title {
+  font-family: 'Rancho' !important;
+}
 .align-content-center {
   display: flex;
   align-items: center;
