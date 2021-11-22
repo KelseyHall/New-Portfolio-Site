@@ -104,11 +104,11 @@ const GalleryPage = () => {
       </Typography>
       <SRLWrapper options={options}>
         <ImageList
-          sx={{ width: 500, height: '100%' }}
+          sx={{ width: '80%', height: '100%' }}
           variant="quilted"
           cols={4}
-          rowHeight={121}
-          className="auto-margin"
+          rowHeight={'100%'}
+          className=" auto-margin "
         >
           {itemData.map((item) => (
             <ImageListItem
