@@ -22,54 +22,83 @@ const ContactPage = () => {
         className="ContactUs-BannerImg"
         alt="Kelsey standing in a tea plantation landscape"
       />
-      <Typography variant="h4" color="secondary" className="secondary-title">
-        Other places to find me:
-      </Typography>
-      <Link
-        variant="body2"
-        color="inherit"
-        href="#"
-        underline="none"
-        className="align-content-center"
-      >
-        <img src={githubIcon} className="contact-social-icons" alt="github" />
-        @KelseyHall
-      </Link>
-      <Link
-        variant="body2"
-        color="inherit"
-        href="#"
-        underline="none"
-        className="align-content-center"
-      >
-        <img src={linkedInIcon} className="contact-social-icons" alt="github" />
-        @Kelsey-Hall23
-      </Link>
-
+      <div className="contact-socials">
+        <Typography variant="h4" color="secondary" className="secondary-title">
+          Other places to find me:
+        </Typography>
+        <Link
+          variant="body2"
+          color="inherit"
+          href="#"
+          underline="none"
+          className="align-content-center"
+        >
+          <img src={githubIcon} className="contact-social-icons" alt="github" />
+          @KelseyHall
+        </Link>
+        <Link
+          variant="body2"
+          color="inherit"
+          href="#"
+          underline="none"
+          className="align-content-center"
+        >
+          <img
+            src={linkedInIcon}
+            className="contact-social-icons"
+            alt="github"
+          />
+          @Kelsey-Hall23
+        </Link>
+      </div>
       <Typography variant="h4" color="secondary" className="secondary-title">
         Let's Chat
       </Typography>
       <Box
         component="form"
-        sx={{ '& > :not(style)': { m: 1 } }}
+        sx={{
+          '& > :not(style)': {
+            m: 1,
+          },
+        }}
         autoComplete="off"
       >
-        <TextField required id="filled-basic" label="Name" variant="filled" />
-        <TextField required id="filled-basic" label="Email" variant="filled" />
+        <TextField
+          required
+          fullWidth
+          id="filled-basic"
+          label="Name"
+          color="secondary"
+          className="form-input-style"
+          variant="filled"
+        />
+        <TextField
+          required
+          fullWidth
+          id="filled-basic"
+          label="Email"
+          color="secondary"
+          className="form-input-style"
+          variant="filled"
+        />
         <TextField
           required
           fullWidth
           id="filled-basic"
           label="Subject"
+          color="secondary"
+          className="form-input-style"
           variant="filled"
         />
         <TextField
           required
           id="filled-textarea"
-          label="message"
+          label="Message"
           multiline
           fullWidth
           variant="filled"
+          color="secondary"
+          className="form-input-style"
           rows={4}
         />
         <Button

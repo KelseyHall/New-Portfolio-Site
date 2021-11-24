@@ -6,3 +6,17 @@
   max-height: 25px;
   filter: invert(1);
 }
+
+.contact-socials {
+  display: flex;
+  margin: 30px 0;
+}
+.contact-socials > a {
+  padding: 0 20px;
+}
+.MuiFilledInput-root {
+  background-color: #f7f6f680 !important;
+}
+
+.form-input-style {
+}
