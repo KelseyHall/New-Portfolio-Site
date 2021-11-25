@@ -1,13 +1,17 @@
 .footer {
   margin-top: 20px;
+  background-color: #979386;
+  /* position: absolute; */
+  bottom: 0;
+  width: 100vw;
 }
-.footer-Toolbar {
-}
+
 .footer a {
   padding: 0 20px;
 }
 .footer-icons {
   max-height: 25px;
+  opacity: 0.8;
 }
 .footer-copyright {
   padding-bottom: 10px !important;

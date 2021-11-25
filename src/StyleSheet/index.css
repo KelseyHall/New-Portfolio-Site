@@ -28,7 +28,9 @@ code {
   font-family: 'Rancho';
   src: url('../fonts/Rancho/Rancho-Regular.ttf') format('truetype');
 }
-
+#root {
+  min-height: 100vh;
+}
 body::before {
   content: '';
   background-image: url('../img/background-leaves-top.png');
@@ -47,7 +49,7 @@ body::before {
 body::after {
   content: '';
   background-image: url('../img/background-leaves-bottom.png');
-  background-position: bottom 0 right -15%;
+  background-position: bottom 100px right -15%;
   background-size: 60%;
   background-repeat: no-repeat;
   opacity: 0.3;
@@ -60,22 +62,7 @@ body::after {
   /* left: 0; */
   z-index: -1000;
 }
-/* .bottom-background-img {
-  content: '';
-  background-image: url('../img/background-leaves-bottom.png');
-  background-position: top 0 right -15%;
-  background-size: 60%;
-  background-repeat: no-repeat;
-  opacity: 0.3;
-  width: 50%;
-  height: 10%;
-  position: absolute;
-  top: 0px;
-  right: -10%;
-  bottom: -10%;
-  left: 0;
-  z-index: -1000;
-} */
+
 body {
   background-color: #ebecea !important;
   font-family: 'ArialHBS' !important;

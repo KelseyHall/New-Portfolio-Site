@@ -68,7 +68,7 @@ const Header = () => {
           edge="end"
           color="secondary"
           aria-label="menu"
-          sx={{ mr: 2 }}
+          sx={{ mr: 1 }}
           onClick={handleDrawerOpen}
         >
           <Menu />

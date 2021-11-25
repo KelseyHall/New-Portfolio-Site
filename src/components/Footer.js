@@ -1,11 +1,11 @@
-import { AppBar, Toolbar, Container, Link } from '@mui/material';
+import { Toolbar, Container, Link } from '@mui/material';
 import React from 'react';
 import githubIcon from '../img/github-icon.png';
 import linkedInIcon from '../img/linkedIn-icon.png';
 
 const Footer = () => {
   return (
-    <AppBar position="static" color="primary" className="footer">
+    <div className="footer">
       <Container
         maxWidth="sm"
         style={{
@@ -14,7 +14,7 @@ const Footer = () => {
           'align-items': 'center',
         }}
       >
-        <Toolbar className="footer-Toolbar">
+        <Toolbar>
           <Link
             variant="body2"
             color="inherit"
@@ -46,7 +46,7 @@ const Footer = () => {
           Copyright 2021
         </Link>
       </Container>
-    </AppBar>
+    </div>
   );
 };
 
