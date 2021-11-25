@@ -17,7 +17,7 @@ function App() {
           <RouterSwitch />
         </BrowserRouter>
       </div>
-      <Footer />
+      {/*<Footer />*/}
     </ThemeProvider>
   );
 }

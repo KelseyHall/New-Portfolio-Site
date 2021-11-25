@@ -31,6 +31,9 @@ code {
 #root {
   min-height: 100vh;
 }
+.MuiTypography-root {
+  font-family: 'ArialHBS' !important;
+}
 body::before {
   content: '';
   background-image: url('../img/background-leaves-top.png');
@@ -81,14 +84,20 @@ body {
 .auto-margin {
   margin: 0 auto !important;
 }
+
 .page-title {
   font-family: 'Rancho' !important;
   text-align: center !important;
   margin: 20px 0 !important;
 }
+.section-title {
+  text-align: center;
+  margin: 30px 0 !important;
+}
 .secondary-title {
   font-family: 'Rancho' !important;
 }
+
 .align-content-center {
   display: flex;
   align-items: center;

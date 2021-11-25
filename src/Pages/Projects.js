@@ -119,9 +119,9 @@ const ProjectsPage = () => {
       <Typography
         variant="h3"
         color="primary.contrastText"
-        className="section-title"
+        className="section-title coding-title"
       >
-        Coding
+        {`<Coding />`}
       </Typography>
       <Grid container spacing={2}>
         {coding.map((item) => DisplayProjects(item))}
@@ -129,7 +129,7 @@ const ProjectsPage = () => {
       <Typography
         variant="h3"
         color="primary.contrastText"
-        className="section-title"
+        className="section-title design-title"
       >
         Design
       </Typography>
