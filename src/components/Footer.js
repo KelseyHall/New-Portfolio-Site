@@ -1,52 +1,52 @@
-import { Toolbar, Container, Link } from '@mui/material';
+import { Toolbar, Link } from '@mui/material';
+import { Box } from '@mui/system';
 import React from 'react';
 import githubIcon from '../img/github-icon.png';
 import linkedInIcon from '../img/linkedIn-icon.png';
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <Container
-        maxWidth="sm"
-        style={{
-          display: 'flex',
-          'flex-direction': 'column',
-          'align-items': 'center',
-        }}
-      >
-        <Toolbar>
-          <Link
-            variant="body2"
-            color="inherit"
-            href="#"
-            underline="none"
-            className="align-content-center"
-          >
-            <img src={githubIcon} className="footer-icons" alt="github" />
-            @KelseyHall
-          </Link>
-          <Link
-            variant="body2"
-            color="inherit"
-            href="#"
-            underline="none"
-            className="align-content-center"
-          >
-            <img src={linkedInIcon} className="footer-icons" alt="github" />
-            @Kelsey-Hall23
-          </Link>
-        </Toolbar>
+    <Box
+      className="footer"
+      maxWidth="sm"
+      style={{
+        display: 'flex',
+        'flex-direction': 'column',
+        'align-items': 'center',
+      }}
+    >
+      <Toolbar>
         <Link
           variant="body2"
           color="inherit"
           href="#"
           underline="none"
-          className="footer-copyright"
+          className="align-content-center"
         >
-          Copyright 2021
+          <img src={githubIcon} className="footer-icons" alt="github" />
+          @KelseyHall
         </Link>
-      </Container>
-    </div>
+        <Link
+          variant="body2"
+          color="inherit"
+          href="#"
+          underline="none"
+          className="align-content-center"
+        >
+          <img src={linkedInIcon} className="footer-icons" alt="github" />
+          @Kelsey-Hall23
+        </Link>
+      </Toolbar>
+      <Link
+        variant="body2"
+        color="inherit"
+        href="#"
+        underline="none"
+        className="footer-copyright"
+      >
+        Copyright 2021
+      </Link>
+    </Box>
   );
 };
 

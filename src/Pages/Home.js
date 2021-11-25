@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Typography } from '@mui/material';
 import LandscapeImg from '../img/017165F5-1BDF-4B8F-BB08-E7B1B790B57A.jpeg';
 import KelseySelfie from '../img/IMG_3475.jpeg';
+import { Box } from '@mui/system';
 
 export const HomeBannerImg = () => {
   return (
@@ -39,10 +40,10 @@ export const AboutMeSection = () => {
 
 const HomePage = () => {
   return (
-    <div style={{ position: '', top: '0' }}>
+    <Box sx={{ position: '', top: '0' }}>
       <HomeBannerImg />
       <AboutMeSection />
-    </div>
+    </Box>
   );
 };
 

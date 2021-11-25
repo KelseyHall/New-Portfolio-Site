@@ -22,14 +22,17 @@ const ContactPage = () => {
         className="ContactUs-BannerImg"
         alt="Kelsey standing in a tea plantation landscape"
       />
-      <div className="contact-socials">
+      <Box
+        sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' } }}
+        className="contact-socials"
+      >
         <Typography variant="h4" color="secondary" className="secondary-title">
           Other places to find me:
         </Typography>
         <Link
           variant="body2"
           color="inherit"
-          href="#"
+          href="https://github.com/KelseyHall"
           underline="none"
           className="align-content-center"
         >
@@ -50,7 +53,7 @@ const ContactPage = () => {
           />
           @Kelsey-Hall23
         </Link>
-      </div>
+      </Box>
       <Typography variant="h4" color="secondary" className="secondary-title">
         Let's Chat
       </Typography>
