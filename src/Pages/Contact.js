@@ -72,7 +72,6 @@ const ContactPage = () => {
           id="filled-basic"
           label="Name"
           color="secondary"
-          className="form-input-style"
           variant="filled"
         />
         <TextField
@@ -81,7 +80,6 @@ const ContactPage = () => {
           id="filled-basic"
           label="Email"
           color="secondary"
-          className="form-input-style"
           variant="filled"
         />
         <TextField
@@ -90,7 +88,6 @@ const ContactPage = () => {
           id="filled-basic"
           label="Subject"
           color="secondary"
-          className="form-input-style"
           variant="filled"
         />
         <TextField
@@ -101,7 +98,6 @@ const ContactPage = () => {
           fullWidth
           variant="filled"
           color="secondary"
-          className="form-input-style"
           rows={4}
         />
         <Button

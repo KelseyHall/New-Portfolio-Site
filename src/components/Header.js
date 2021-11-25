@@ -8,7 +8,7 @@ import {
   List,
   ListItem,
 } from '@mui/material';
-import { Menu } from '@mui/icons-material';
+import { Close, Menu } from '@mui/icons-material';
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -71,14 +71,15 @@ const Header = () => {
           sx={{ mr: 1 }}
           onClick={handleDrawerOpen}
         >
-          <Menu />
+          <Menu style={{ fontSize: 35 }} />
         </IconButton>
         <Drawer
           sx={{
-            width: '40vw',
+            width: { xs: '100vw', sm: '40vw' },
             flexShrink: 0,
             '& .MuiDrawer-paper': {
-              width: '40vw',
+              width: { xs: '100vw', sm: '40vw' },
+
               boxSizing: 'border-box',
             },
           }}
@@ -88,6 +89,16 @@ const Header = () => {
           onClose={handleDrawerClose}
         >
           <div>
+            <IconButton
+              size="large"
+              edge="start"
+              color="secondary"
+              aria-label="close"
+              sx={{ mr: 3, 'padding-left': '30px' }}
+              onClick={handleDrawerClose}
+            >
+              <Close style={{ fontSize: 35 }} />
+            </IconButton>
             <NavList />
           </div>
         </Drawer>

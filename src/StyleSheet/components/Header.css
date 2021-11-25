@@ -14,14 +14,26 @@
   padding: 0 5px;
   color: #463301 !important;
   text-decoration: none;
-  font-weight: bolder;
-  -webkit-text-stroke: 0.5px #ebecea !important;
+  font-weight: 500;
+  /* -webkit-text-stroke: 0.5px #ebecea !important; */
   font-size: 24px !important;
+}
+
+.Nav-item .active {
+  font-weight: bolder !important;
+  color: #592015 !important;
 }
 .App-header .MuiToolbar-root {
   justify-content: space-between;
 }
 
 .MuiDrawer-paper {
-  background-color: #f6f6f6 !important;
+  background-color: #c8cdc1 !important;
+}
+.MuiDrawer-paper .Nav-item {
+  flex-direction: column !important;
+  align-items: center !important;
+  border-bottom: #463301 1px solid;
+  width: 70%;
+  margin: 0 auto;
 }

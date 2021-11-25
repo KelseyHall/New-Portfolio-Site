@@ -17,6 +17,6 @@
 .MuiFilledInput-root {
   background-color: #f7f6f680 !important;
 }
-
-.form-input-style {
+.MuiFilledInput-root:before {
+  border-bottom: none !important;
 }
