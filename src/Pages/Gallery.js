@@ -6,6 +6,7 @@ import { SRLWrapper } from 'simple-react-lightbox';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import theme from '../StyleSheet/theme';
+import { galleryDataBase } from '../components/galleryDataBase';
 
 //structure of quilted image list
 function srcset(image, size, rows = 1, cols = 1) {
@@ -110,7 +111,7 @@ const GalleryPage = () => {
           rowHeight={'100%'}
           className=" auto-margin "
         >
-          {itemData.map((item) => (
+          {galleryDataBase.map((item) => (
             <ImageListItem
               key={item.img}
               cols={item.cols || 1}
