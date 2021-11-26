@@ -53,8 +53,3 @@ const Footer = () => {
 };
 
 export default Footer;
-// <div className="footer" color="primary">
-//       <a href="www.google.com">@KelseyHall</a>
-//       <a href="www.google.com">@Kelsey-Hall23</a>
-//       <a href="www.google.com">Copyright 2021</a>
-//     </div>

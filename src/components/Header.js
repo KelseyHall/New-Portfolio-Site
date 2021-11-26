@@ -5,32 +5,12 @@ import {
   Toolbar,
   Typography,
   Drawer,
-  List,
-  ListItem,
 } from '@mui/material';
 import { Close, Menu } from '@mui/icons-material';
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
-import theme from '../StyleSheet/theme';
 
-const NavList = () => {
-  return (
-    <List className="NavFont">
-      <ListItem className="Nav-item">
-        <NavLink to="/">Home</NavLink>
-      </ListItem>
-      <ListItem className="Nav-item">
-        <NavLink to="/gallery">Gallery</NavLink>
-      </ListItem>
-      <ListItem className="Nav-item">
-        <NavLink to="/projects">Projects</NavLink>
-      </ListItem>
-      <ListItem className="Nav-item">
-        <NavLink to="/contactme">Contact me</NavLink>
-      </ListItem>
-    </List>
-  );
-};
+import theme from '../StyleSheet/theme';
+import { NavList, DisplayDesktop } from './Header-Navs';
 
 const Header = () => {
   const [state, setState] = useState({
@@ -103,31 +83,6 @@ const Header = () => {
             <NavList />
           </div>
         </Drawer>
-      </Toolbar>
-    );
-  };
-
-  const DisplayDesktop = () => {
-    return (
-      <Toolbar>
-        <Typography variant="h2" className="Logo">
-          Kelsey Hall's
-        </Typography>
-
-        <ul className="NavFont Nav-List">
-          <li className="Nav-item">
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li className="Nav-item">
-            <NavLink to="/gallery">Gallery</NavLink>
-          </li>
-          <li className="Nav-item">
-            <NavLink to="/projects">Projects</NavLink>
-          </li>
-          <li className="Nav-item">
-            <NavLink to="/contactme">Contact me</NavLink>
-          </li>
-        </ul>
       </Toolbar>
     );
   };

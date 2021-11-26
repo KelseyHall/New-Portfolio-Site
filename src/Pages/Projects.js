@@ -8,85 +8,9 @@ import {
   CardActionArea,
   Container,
 } from '@mui/material';
-import tempImg from '../img/IMG_3475.jpeg';
-const designProjects = [
-  {
-    design: [
-      {
-        title: 'DesignProject1',
-        description: 'about this project',
-        img: tempImg,
-      },
-      {
-        title: 'DesignProject2',
-        description: 'about this project',
-        img: tempImg,
-      },
-      {
-        title: 'DesignProject3',
-        description: 'about this project',
-        img: tempImg,
-      },
-      {
-        title: 'DesignProject4',
-        description: 'about this project',
-        img: tempImg,
-      },
-      {
-        title: 'DesignProject5',
-        description: 'about this project',
-        img: tempImg,
-      },
-      {
-        title: 'DesignProject6',
-        description: 'about this project',
-        img: tempImg,
-      },
-      {
-        title: 'DesignProject7',
-        description: 'about this project',
-        img: tempImg,
-      },
-    ],
-    coding: [
-      {
-        title: 'CodingProject1',
-        description: 'about this project',
-        img: tempImg,
-      },
-      {
-        title: 'CodingProject2',
-        description: 'about this project',
-        img: tempImg,
-      },
-      {
-        title: 'CodingProject3',
-        description: 'about this project',
-        img: tempImg,
-      },
-      {
-        title: 'CodingProject4',
-        description: 'about this project',
-        img: tempImg,
-      },
-      {
-        title: 'CodingProject5',
-        description: 'about this project',
-        img: tempImg,
-      },
-      {
-        title: 'CodingProject6',
-        description: 'about this project',
-        img: tempImg,
-      },
-      {
-        title: 'CodingProject7',
-        description: 'about this project',
-        img: tempImg,
-      },
-    ],
-  },
-];
+
+import projects from '../components/projectsDatabase';
+
 const DisplayProjects = (item) => (
   <Grid key={item.title} item xs={12} sm={6} md={4}>
     <Card>
@@ -106,7 +30,7 @@ const DisplayProjects = (item) => (
 );
 
 const ProjectsPage = () => {
-  return designProjects.map(({ design, coding }) => (
+  return projects.map(({ design, coding }) => (
     <Container>
       <Typography
         variant="h3"
