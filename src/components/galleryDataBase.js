@@ -49,33 +49,32 @@ export const galleryDataBase = [
   {
     img: img1,
     title: '',
-
-    cols: 2,
   },
   {
     img: img2,
     title: '',
-
-    cols: 2,
   },
   {
     img: img3,
     title: '',
-
+    rows: 2,
     cols: 2,
   },
   {
     img: img4,
     title: '',
     rows: 2,
+    cols: 2,
   },
   {
     img: img5,
     title: '',
+    rows: 2,
   },
   {
     img: img6,
     title: '',
+    cols: 2,
   },
   {
     img: img7,
@@ -86,14 +85,13 @@ export const galleryDataBase = [
   {
     img: img8,
     title: '',
-    rows: 2,
+
     cols: 2,
   },
   {
     img: img9,
     title: '',
     rows: 2,
-    cols: 2,
   },
   {
     img: img10,
@@ -104,32 +102,25 @@ export const galleryDataBase = [
   {
     img: img11,
     title: '',
-    rows: 2,
-    cols: 2,
   },
   {
     img: img12,
     title: '',
-    rows: 2,
+
     cols: 2,
   },
   {
     img: img13,
     title: '',
-    rows: 2,
-    cols: 2,
   },
   {
     img: img14,
     title: '',
-    rows: 2,
-    cols: 2,
   },
   {
     img: img15,
     title: '',
     rows: 2,
-    cols: 2,
   },
   {
     img: img16,
@@ -140,19 +131,19 @@ export const galleryDataBase = [
   {
     img: img17,
     title: '',
-    rows: 2,
+
     cols: 2,
   },
   {
     img: img18,
     title: '',
-    rows: 2,
+
     cols: 2,
   },
   {
     img: img19,
     title: '',
-    rows: 2,
+
     cols: 2,
   },
   {
@@ -165,7 +156,6 @@ export const galleryDataBase = [
     img: img21,
     title: '',
     rows: 2,
-    cols: 2,
   },
   {
     img: img22,
@@ -176,19 +166,16 @@ export const galleryDataBase = [
   {
     img: img23,
     title: '',
-    rows: 2,
-    cols: 2,
   },
   {
     img: img24,
     title: '',
     rows: 2,
-    cols: 2,
   },
   {
     img: img25,
     title: '',
-    rows: 2,
+
     cols: 2,
   },
   {
@@ -200,26 +187,25 @@ export const galleryDataBase = [
   {
     img: img27,
     title: '',
-    rows: 2,
+
     cols: 2,
   },
   {
     img: img28,
     title: '',
-    rows: 2,
+
     cols: 2,
   },
   {
     img: img29,
     title: '',
-    rows: 2,
+
     cols: 2,
   },
   {
     img: img30,
     title: '',
     rows: 2,
-    cols: 2,
   },
   {
     img: img31,
@@ -237,25 +223,20 @@ export const galleryDataBase = [
     img: img33,
     title: '',
     rows: 2,
-    cols: 2,
   },
   {
     img: img34,
     title: '',
-    rows: 2,
-    cols: 2,
   },
   {
     img: img35,
     title: '',
-    rows: 2,
+
     cols: 2,
   },
   {
     img: img36,
     title: '',
-    rows: 2,
-    cols: 2,
   },
   {
     img: img37,
@@ -278,20 +259,17 @@ export const galleryDataBase = [
   {
     img: img40,
     title: '',
-    rows: 2,
+
     cols: 2,
   },
   {
     img: img41,
     title: '',
     rows: 2,
-    cols: 2,
   },
   {
     img: img42,
     title: '',
-    rows: 2,
-    cols: 2,
   },
   {
     img: img43,
@@ -302,8 +280,6 @@ export const galleryDataBase = [
   {
     img: img44,
     title: '',
-    rows: 2,
-    cols: 2,
   },
   {
     img: img45,

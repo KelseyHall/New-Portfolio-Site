@@ -1,1 +1,3 @@
-
+.dense-gallery {
+  grid-auto-flow: dense;
+}
