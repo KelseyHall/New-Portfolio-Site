@@ -19,7 +19,7 @@ const Footer = () => {
         <Link
           variant="body2"
           color="inherit"
-          href="#"
+          href="https://github.com/KelseyHall"
           underline="none"
           className="align-content-center"
         >
@@ -29,7 +29,7 @@ const Footer = () => {
         <Link
           variant="body2"
           color="inherit"
-          href="#"
+          href="https://www.linkedin.com/in/kelsey-hall23/"
           underline="none"
           className="align-content-center"
         >
