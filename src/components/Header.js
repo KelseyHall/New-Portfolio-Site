@@ -11,6 +11,7 @@ import {
 import { Close, Menu } from '@mui/icons-material';
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import theme from '../StyleSheet/theme';
 
 const NavList = () => {
   return (
@@ -79,7 +80,7 @@ const Header = () => {
             flexShrink: 0,
             '& .MuiDrawer-paper': {
               width: { xs: '100vw', sm: '40vw' },
-
+              'background-color': `${theme.palette.primary.main}`,
               boxSizing: 'border-box',
             },
           }}

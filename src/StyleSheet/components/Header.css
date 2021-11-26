@@ -27,9 +27,9 @@
   justify-content: space-between;
 }
 
-.MuiDrawer-paper {
+/* .MuiDrawer-paper {
   background-color: #c8cdc1 !important;
-}
+} */
 .MuiDrawer-paper .Nav-item {
   flex-direction: column !important;
   align-items: center !important;

@@ -3,6 +3,7 @@ import { Box } from '@mui/system';
 import React from 'react';
 import githubIcon from '../img/github-icon.png';
 import linkedInIcon from '../img/linkedIn-icon.png';
+import theme from '../StyleSheet/theme';
 
 const Footer = () => {
   return (
@@ -13,6 +14,7 @@ const Footer = () => {
         display: 'flex',
         'flex-direction': 'column',
         'align-items': 'center',
+        'background-color': `${theme.palette.primary.dark}`,
       }}
     >
       <Toolbar>
