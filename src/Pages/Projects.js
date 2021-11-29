@@ -47,6 +47,7 @@ const ProjectsPage = () => {
       >
         {`<Coding />`}
       </Typography>
+      <Typography variant="body1">{`info about coding`}</Typography>
       <Grid container spacing={2}>
         {coding.map((item) => DisplayProjects(item))}
       </Grid>
@@ -57,6 +58,7 @@ const ProjectsPage = () => {
       >
         Design
       </Typography>
+      <Typography variant="body1">{`info about design`}</Typography>
       <Grid container spacing={2}>
         {design.map((item) => DisplayProjects(item))}
       </Grid>

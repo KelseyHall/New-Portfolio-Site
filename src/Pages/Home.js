@@ -32,7 +32,8 @@ export const AboutMeSection = () => {
         className="About-Me-Selfie float-left"
       />
       <Typography variant="body1" color="primary.contrastText">
-        {`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim at amet, parturient orci. Nibh urna commodo tortor dui eget erat commodo sit. Porttitor sed eget quis tortor sit. Sit bibendum euismod arcu est facilisis ac sit mattis varius. Amet, pellentesque tincidunt leo proin amet, integer sollicitudin nisl. Fusce est non nec quis urna ultrices vulputate. Maecenas eget turpis phasellus in orci, ultricies. Diam tortor, ornare sit sem nunc, lacus blandit. Turpis volutpat, malesuada cursus in vel enim, risus. Sit tortor arcu vitae semper leo sed. `}
+        {`Let’s start with a little about me. 11 years ago I took Multimedia Design at Durham college. This gave me a wide look at all aspects of media. I enhanced my passion for photography, photo manipulation  and created a love for website creation. I have used my design skills to create business cards, gift certificates, electronic newsletters and more. Life has a way of taking you through twist and turns. Both stepping away from the field, only to start a new job that leads to them needing help getting their business on the map. I took a break from learning the newest coding and design software to explore the world. Covid-19 created an opportunity for me to reflect and realize I wanted to do put my time and effort learning all the new tricks of the trade. I look forward to expanding my knowledge and working with a company to grow. 
+        Check out my projects page to more details on what languages and softwares I use.   `}
       </Typography>
     </Container>
   );

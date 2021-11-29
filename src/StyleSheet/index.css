@@ -70,6 +70,9 @@ body {
   background-color: #ebecea !important;
   font-family: 'ArialHBS' !important;
 }
+p {
+  font-size: 20px !important;
+}
 .Logo {
   font-family: 'Amita' !important;
   -webkit-text-stroke: 1px #ebecea !important;
