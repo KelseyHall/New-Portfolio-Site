@@ -4,3 +4,9 @@
 .design-title {
   font-family: 'Rancho' !important;
 }
+.project-contents {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
