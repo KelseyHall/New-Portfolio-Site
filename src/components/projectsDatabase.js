@@ -46,57 +46,6 @@ const projects = [
           },
         ],
       },
-      {
-        title: 'DesignProject4',
-        description: 'about this project',
-        img: tempImg,
-        content: [
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-        ],
-      },
-      {
-        title: 'DesignProject5',
-        description: 'about this project',
-        img: tempImg,
-        content: [
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-        ],
-      },
-      {
-        title: 'DesignProject6',
-        description: 'about this project',
-        img: tempImg,
-        content: [
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-        ],
-      },
     ],
     coding: [
       {
@@ -135,40 +84,6 @@ const projects = [
       },
       {
         title: 'CodingProject3',
-        description: 'about this project',
-        img: tempImg,
-        content: [
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-        ],
-      },
-      {
-        title: 'CodingProject4',
-        description: 'about this project',
-        img: tempImg,
-        content: [
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-        ],
-      },
-      {
-        title: 'CodingProject5',
         description: 'about this project',
         img: tempImg,
         content: [

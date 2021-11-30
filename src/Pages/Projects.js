@@ -13,13 +13,13 @@ import {
 import theme from '../StyleSheet/theme';
 
 import projects from '../components/projectsDatabase';
-const style = {
+const styleModal = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: '90%',
-  'max-height': '80%',
+  'max-height': '90%',
   bgcolor: `${theme.palette.secondary.light}`,
   border: `2px solid ${theme.palette.secondary.main}`,
   boxShadow: 24,
@@ -31,7 +31,7 @@ const DisplayProjects = ({ title, description, img, content }) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <Grid key={title} item xs={12} sm={6} md={6}>
+    <Grid key={title} item xs={12} sm={6} md={4}>
       <Card>
         <CardMedia component="img" height="140" image={img} alt="Temp" />
         <CardContent>
@@ -42,9 +42,19 @@ const DisplayProjects = ({ title, description, img, content }) => {
             {description}
           </Typography>
 
-          <Button onClick={handleOpen}>See Project</Button>
+          <Button
+            sx={{
+              color: theme.palette.secondary.main,
+              display: 'flex',
+              margin: '0 auto',
+            }}
+            className="project-buttons"
+            onClick={handleOpen}
+          >
+            See Project
+          </Button>
           <Modal open={open} onClose={handleClose}>
-            <Box sx={style}>
+            <Box sx={styleModal}>
               <Button
                 sx={{ color: theme.palette.secondary.main }}
                 onClick={handleClose}
@@ -59,7 +69,14 @@ const DisplayProjects = ({ title, description, img, content }) => {
                   {imgs.map((item) => (
                     <img src={item} width="100%" alt={title} />
                   ))}
-                  {src ? <Button>view live</Button> : null}
+                  {src ? (
+                    <Button
+                      sx={{ color: theme.palette.secondary.main }}
+                      className="project-buttons"
+                    >
+                      view live
+                    </Button>
+                  ) : null}
                 </Box>
               ))}
             </Box>
@@ -75,7 +92,7 @@ const ProjectsPage = () => {
     <Container>
       <Typography
         variant="h3"
-        color="primary.contrastText"
+        color={theme.palette.primary.contrastText}
         className="page-title"
       >
         Projects
@@ -83,7 +100,7 @@ const ProjectsPage = () => {
 
       <Typography
         variant="h3"
-        color="primary.contrastText"
+        color={theme.palette.primary.contrastText}
         className="section-title coding-title"
       >
         {`<Coding />`}
@@ -94,7 +111,7 @@ const ProjectsPage = () => {
       </Grid>
       <Typography
         variant="h3"
-        color="primary.contrastText"
+        color={theme.palette.primary.contrastText}
         className="section-title design-title"
       >
         Design

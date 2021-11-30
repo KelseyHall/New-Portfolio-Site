@@ -10,3 +10,6 @@
   flex-direction: column;
   align-items: flex-start;
 }
+.project-buttons {
+  font-weight: bold !important;
+}
