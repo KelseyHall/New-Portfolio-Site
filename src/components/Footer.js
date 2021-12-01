@@ -1,5 +1,5 @@
-import { Toolbar, Link } from '@mui/material';
-import { Box } from '@mui/system';
+import { Toolbar, Link, Container } from '@mui/material';
+// import { Box } from '@mui/system';
 import React from 'react';
 import githubIcon from '../img/github-icon.png';
 import linkedInIcon from '../img/linkedIn-icon.png';
@@ -7,9 +7,8 @@ import theme from '../StyleSheet/theme';
 
 const Footer = () => {
   return (
-    <Box
+    <Container
       className="footer"
-      maxWidth="sm"
       style={{
         display: 'flex',
         'flex-direction': 'column',
@@ -48,7 +47,7 @@ const Footer = () => {
       >
         Copyright 2021
       </Link>
-    </Box>
+    </Container>
   );
 };
 

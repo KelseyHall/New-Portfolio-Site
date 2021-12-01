@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@emotion/react';
 
 import { BrowserRouter } from 'react-router-dom';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 import Header from './components/Header';
 
 import RouterSwitch from './Router/Router';
@@ -16,8 +16,8 @@ function App() {
 
           <RouterSwitch />
         </BrowserRouter>
+        <Footer />
       </div>
-      {/*<Footer />*/}
     </ThemeProvider>
   );
 }

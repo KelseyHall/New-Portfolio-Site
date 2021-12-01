@@ -1,9 +1,10 @@
 .footer {
   margin-top: 20px;
   /* background-color: #979386; */
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100vw;
+  max-height: 100px;
 }
 
 .footer a {
