@@ -115,7 +115,7 @@ const ProjectsPage = () => {
       </Typography>
 
       <Typography
-        variant="h3"
+        variant="h4"
         color={theme.palette.primary.contrastText}
         className="section-title coding-title"
       >
@@ -126,7 +126,7 @@ const ProjectsPage = () => {
         {coding.map((item) => DisplayProjects(item))}
       </Grid>
       <Typography
-        variant="h3"
+        variant="h4"
         color={theme.palette.primary.contrastText}
         className="section-title design-title"
       >

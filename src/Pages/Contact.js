@@ -24,28 +24,33 @@ const ContactPage = () => {
         alt="Kelsey standing in a tea plantation landscape"
       />
       <Box
-        sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' } }}
+        sx={{
+          display: 'flex',
+          flexDirection: { xs: 'column', sm: 'row' },
+        }}
         className="contact-socials"
       >
         <Typography variant="h4" color="secondary" className="secondary-title">
           Other places to find me:
         </Typography>
         <Link
-          variant="body2"
+          variant="body1"
           color="inherit"
           href="https://github.com/KelseyHall"
           underline="none"
           className="align-content-center"
+          sx={{ padding: { xs: '0 5px', md: '0 25px' } }}
         >
           <img src={githubIcon} className="contact-social-icons" alt="github" />
           @KelseyHall
         </Link>
         <Link
-          variant="body2"
+          variant="body1"
           color="inherit"
           href="https://www.linkedin.com/in/kelsey-hall23/"
           underline="none"
           className="align-content-center"
+          sx={{ padding: { xs: '0 10px', sm: '0 20px' } }}
         >
           <img
             src={linkedInIcon}

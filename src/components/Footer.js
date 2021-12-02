@@ -1,9 +1,9 @@
-import { Toolbar, Link, Container } from '@mui/material';
+import { Link, Container } from '@mui/material';
 // import { Box } from '@mui/system';
 import React from 'react';
-import githubIcon from '../img/github-icon.png';
-import linkedInIcon from '../img/linkedIn-icon.png';
-import theme from '../StyleSheet/theme';
+// import githubIcon from '../img/github-icon.png';
+// import linkedInIcon from '../img/linkedIn-icon.png';
+// import theme from '../StyleSheet/theme';
 
 const Footer = () => {
   return (
@@ -13,10 +13,10 @@ const Footer = () => {
         display: 'flex',
         'flex-direction': 'column',
         'align-items': 'center',
-        'background-color': `${theme.palette.primary.dark}`,
+        // 'background-color': `${theme.palette.primary.dark}`,
       }}
     >
-      <Toolbar>
+      {/*<Toolbar>
         <Link
           variant="body2"
           color="inherit"
@@ -37,7 +37,7 @@ const Footer = () => {
           <img src={linkedInIcon} className="footer-icons" alt="github" />
           @Kelsey-Hall23
         </Link>
-      </Toolbar>
+      </Toolbar>*/}
       <Link
         variant="body2"
         color="inherit"

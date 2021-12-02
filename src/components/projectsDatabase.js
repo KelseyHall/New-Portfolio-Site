@@ -1,4 +1,4 @@
-import tempImg from '../img/IMG_3475.jpeg';
+// import tempImg from '../img/IMG_3475.jpeg';
 
 import beautybyKayleneLogo from '../projects/beautybykayleneLogo.jpg';
 import businessCard1 from '../projects/businessCard-Front.png';
