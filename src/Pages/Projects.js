@@ -31,14 +31,19 @@ const DisplayProjects = ({ title, description, img, content }) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <Grid key={title} item xs={12} sm={6} md={4}>
+    <Grid key={title} item xs={12} /*sm={6} md={4}*/>
       <Card>
         <CardMedia component="img" height="140" image={img} alt="Temp" />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            color={theme.palette.primary.contrastText}
+          >
             {title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color={theme.palette.secondary.dark}>
             {description}
           </Typography>
 
@@ -63,11 +68,22 @@ const DisplayProjects = ({ title, description, img, content }) => {
               </Button>
               {content.map(({ title, imgs, src }) => (
                 <Box className="project-contents">
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    className="project-subtitle"
+                    component="div"
+                    color={theme.palette.secondary.dark}
+                  >
                     {title}
                   </Typography>
                   {imgs.map((item) => (
-                    <img src={item} width="100%" alt={title} />
+                    <img
+                      src={item}
+                      className="project-sub-img"
+                      width="100%"
+                      alt={title}
+                    />
                   ))}
                   {src ? (
                     <Button
@@ -125,31 +141,3 @@ const ProjectsPage = () => {
 };
 
 export default ProjectsPage;
-
-// const [show, setShow] = React.useState(false);
-// const container = React.useRef(null);
-
-// const handleClick = () => {
-//   setShow(!show);
-// };
-
-// <Button onClick={handleClick}>
-// {show ? 'Hide Project' : 'See Project'}
-// </Button>
-
-// {show ? (
-// <Portal container={container.current}>
-//   {content.map(({ title, imgs, src }) => (
-//     <Box className="project-contents">
-//       <Typography gutterBottom variant="h5" component="div">
-//         {title}
-//       </Typography>
-//       {imgs.map((item) => (
-//         <img src={item} width="20%" />
-//       ))}
-//       {src ? <Button>view live</Button> : ''}
-//     </Box>
-//   ))}
-// </Portal>
-// ) : null}
-// <Box ref={container} sx={{ width: '100vw' }} />

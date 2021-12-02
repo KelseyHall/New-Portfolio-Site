@@ -1,16 +1,23 @@
 import tempImg from '../img/IMG_3475.jpeg';
 
+import beautybyKayleneLogo from '../projects/beautybykayleneLogo.jpg';
 import businessCard1 from '../projects/businessCard-Front.png';
 import businessCard2 from '../projects/businessCard-Back.png';
-
+import GCFront from '../projects/giftcertificate-front.jpg';
+import GCBack from '../projects/giftcertificate-back.jpg';
 const projects = [
   {
     design: [
       {
-        title: 'beauty by Kaylene',
+        title: 'Beauty by Kaylene',
         description: 'about this project',
-        img: tempImg,
+        img: beautybyKayleneLogo,
         content: [
+          {
+            title: 'logo creation',
+            imgs: [beautybyKayleneLogo],
+            src: '',
+          },
           {
             title: 'business Card',
             imgs: [businessCard1, businessCard2],
@@ -18,30 +25,12 @@ const projects = [
           },
           {
             title: 'gift certificate',
+            imgs: [GCFront, GCBack],
+            src: '',
+          },
+          {
+            title: 'website mock up',
             imgs: [],
-            src: '',
-          },
-        ],
-      },
-      {
-        title: 'DesignProject2',
-        description: 'about this project',
-        img: tempImg,
-        content: [],
-      },
-      {
-        title: 'DesignProject3',
-        description: 'about this project',
-        img: tempImg,
-        content: [
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
             src: '',
           },
         ],
@@ -49,53 +38,14 @@ const projects = [
     ],
     coding: [
       {
-        title: 'CodingProject1',
-        description: 'about this project',
-        img: tempImg,
+        title: 'Beauty by Kaylene',
+        description: 'Mobile Spa responsive website',
+        img: beautybyKayleneLogo,
         content: [
           {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
+            title: 'Website',
+            imgs: [],
             src: 'button',
-          },
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-        ],
-      },
-      {
-        title: 'CodingProject2',
-        description: 'about this project',
-        img: tempImg,
-        content: [
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-        ],
-      },
-      {
-        title: 'CodingProject3',
-        description: 'about this project',
-        img: tempImg,
-        content: [
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
-          },
-          {
-            title: 'business Card',
-            imgs: [businessCard1, businessCard2],
-            src: '',
           },
         ],
       },
