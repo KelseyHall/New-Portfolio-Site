@@ -8,6 +8,8 @@ import ImageListItem from '@mui/material/ImageListItem';
 import theme from '../StyleSheet/theme';
 import { galleryDataBase } from '../components/galleryDataBase';
 
+import { v4 as uuidv4 } from 'uuid';
+
 //structure of quilted image list
 function srcset(image, size, rows = 1, cols = 1) {
   return {
@@ -48,12 +50,12 @@ const GalleryPage = () => {
           sx={{ width: '80%', height: '100%' }}
           variant="quilted"
           cols={matches ? 2 : 4}
-          rowHeight={'100%'}
+          rowHeight={'auto'}
           className=" auto-margin dense-gallery "
         >
           {galleryDataBase.map((item) => (
             <ImageListItem
-              key={item.img}
+              key={uuidv4()}
               cols={item.cols || 1}
               rows={item.rows || 1}
             >

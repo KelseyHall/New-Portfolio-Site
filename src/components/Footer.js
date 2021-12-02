@@ -11,8 +11,8 @@ const Footer = () => {
       className="footer"
       style={{
         display: 'flex',
-        'flex-direction': 'column',
-        'align-items': 'center',
+        flexDirection: 'column',
+        alignItems: 'center',
         // 'background-color': `${theme.palette.primary.dark}`,
       }}
     >

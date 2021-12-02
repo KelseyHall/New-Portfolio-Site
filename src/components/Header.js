@@ -60,7 +60,7 @@ const Header = () => {
             flexShrink: 0,
             '& .MuiDrawer-paper': {
               width: { xs: '100vw', sm: '40vw' },
-              'background-color': `${theme.palette.primary.main}`,
+              backgroundColor: `${theme.palette.primary.main}`,
               boxSizing: 'border-box',
             },
           }}

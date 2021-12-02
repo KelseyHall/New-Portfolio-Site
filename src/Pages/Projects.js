@@ -11,8 +11,8 @@ import {
   Modal,
 } from '@mui/material';
 import theme from '../StyleSheet/theme';
-
 import projects from '../components/projectsDatabase';
+
 const styleModal = {
   position: 'absolute',
   top: '50%',
