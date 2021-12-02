@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography } from '@mui/material';
+import { Container, Typography, useMediaQuery } from '@mui/material';
 
 import { SRLWrapper } from 'simple-react-lightbox';
 
@@ -33,6 +33,7 @@ const options = {
 };
 
 const GalleryPage = () => {
+  const matches = useMediaQuery('(max-width:768px)');
   return (
     <Container>
       <Typography
@@ -46,7 +47,7 @@ const GalleryPage = () => {
         <ImageList
           sx={{ width: '80%', height: '100%' }}
           variant="quilted"
-          cols={4}
+          cols={matches ? 2 : 4}
           rowHeight={'100%'}
           className=" auto-margin dense-gallery "
         >
