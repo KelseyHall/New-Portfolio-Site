@@ -5,6 +5,8 @@ import businessCard1 from '../projects/businessCard-Front.png';
 import businessCard2 from '../projects/businessCard-Back.png';
 import GCFront from '../projects/giftcertificate-front.jpg';
 import GCBack from '../projects/giftcertificate-back.jpg';
+import BBKWebsite from '../projects/beautyByKayleneFigmaMockup.png';
+
 const projects = [
   {
     design: [
@@ -30,7 +32,7 @@ const projects = [
           },
           {
             title: 'website mock up',
-            imgs: [],
+            imgs: [BBKWebsite],
             src: '',
           },
         ],
@@ -45,7 +47,7 @@ const projects = [
           {
             title: 'Website',
             imgs: [],
-            src: 'button',
+            src: 'https://www.beautybykaylene.ca',
           },
         ],
       },

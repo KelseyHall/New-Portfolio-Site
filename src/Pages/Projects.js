@@ -90,7 +90,9 @@ const DisplayProjects = ({ title, description, img, content }) => {
                   {src ? (
                     <Button
                       sx={{ color: theme.palette.secondary.main }}
+                      target="_blank"
                       className="project-buttons"
+                      href={src}
                     >
                       view live
                     </Button>
@@ -123,7 +125,10 @@ const ProjectsPage = () => {
       >
         {`<Coding />`}
       </Typography>
-      <Typography variant="body1">{`info about coding`}</Typography>
+      <Typography
+        variant="body1"
+        sx={{ textAlign: 'center' }}
+      >{`Knowledge in Javascript, React.js, CSS, Sass, HTML, Wordpress, MailChimp`}</Typography>
       <Grid container spacing={2}>
         {coding.map((item) => DisplayProjects(item))}
       </Grid>
@@ -134,7 +139,10 @@ const ProjectsPage = () => {
       >
         Design
       </Typography>
-      <Typography variant="body1">{`info about design`}</Typography>
+      <Typography
+        variant="body1"
+        sx={{ textAlign: 'center' }}
+      >{`Knowledge in Photoshop, Illustrator, Figma`}</Typography>
       <Grid container spacing={2}>
         {design.map((item) => DisplayProjects(item))}
       </Grid>

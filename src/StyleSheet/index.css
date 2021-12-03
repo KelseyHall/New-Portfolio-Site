@@ -75,6 +75,7 @@ p {
 }
 .Logo {
   font-family: 'Amita' !important;
+
   -webkit-text-stroke: 1px #ebecea !important;
 }
 .NavFont {
