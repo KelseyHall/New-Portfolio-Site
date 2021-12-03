@@ -12,6 +12,7 @@ import {
 } from '@mui/material';
 import theme from '../StyleSheet/theme';
 import projects from '../components/projectsDatabase';
+import { v4 as uuidv4 } from 'uuid';
 
 const styleModal = {
   position: 'absolute',
@@ -19,7 +20,7 @@ const styleModal = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: '90%',
-  'max-height': '90%',
+  maxHeight: '90%',
   bgcolor: `${theme.palette.secondary.light}`,
   border: `2px solid ${theme.palette.secondary.main}`,
   boxShadow: 24,
@@ -31,7 +32,7 @@ const DisplayProjects = ({ title, description, img, content }) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <Grid key={title} item xs={12} /*sm={6} md={4}*/>
+    <Grid key={uuidv4()} item xs={12} /*sm={6} md={4}*/>
       <Card>
         <CardMedia component="img" height="140" image={img} alt="Temp" />
         <CardContent>
@@ -67,7 +68,7 @@ const DisplayProjects = ({ title, description, img, content }) => {
                 close
               </Button>
               {content.map(({ title, imgs, src }) => (
-                <Box className="project-contents">
+                <Box key={uuidv4()} className="project-contents">
                   <Typography
                     gutterBottom
                     variant="h5"
@@ -79,6 +80,7 @@ const DisplayProjects = ({ title, description, img, content }) => {
                   </Typography>
                   {imgs.map((item) => (
                     <img
+                      key={uuidv4()}
                       src={item}
                       className="project-sub-img"
                       width="100%"
@@ -105,7 +107,7 @@ const DisplayProjects = ({ title, description, img, content }) => {
 
 const ProjectsPage = () => {
   return projects.map(({ design, coding }) => (
-    <Container>
+    <Container key={uuidv4()}>
       <Typography
         variant="h3"
         color={theme.palette.primary.contrastText}

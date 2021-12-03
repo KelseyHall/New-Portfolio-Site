@@ -75,12 +75,14 @@ const Header = () => {
               edge="start"
               color="secondary"
               aria-label="close"
-              sx={{ mr: 3, 'padding-left': '30px' }}
+              sx={{ mr: 3, paddingLeft: '30px' }}
               onClick={handleDrawerClose}
             >
               <Close style={{ fontSize: 35 }} />
             </IconButton>
-            <NavList />
+            <div onClick={handleDrawerClose}>
+              <NavList />
+            </div>
           </div>
         </Drawer>
       </Toolbar>

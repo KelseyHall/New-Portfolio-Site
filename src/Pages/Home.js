@@ -10,7 +10,7 @@ export const HomeBannerImg = () => {
       <img
         alt="beautiful landscape of tea plantation in malaysia"
         src={LandscapeImg}
-        style={{ width: '100vw', 'margin-bottom': '5%' }}
+        style={{ width: '100vw', marginBottom: '5%' }}
       />
     </div>
   );
