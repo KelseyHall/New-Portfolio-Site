@@ -83,7 +83,6 @@ const DisplayProjects = ({ title, description, img, content }) => {
                       key={uuidv4()}
                       src={item}
                       className="project-sub-img"
-                      width="100%"
                       alt={title}
                     />
                   ))}

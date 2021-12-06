@@ -1,12 +1,13 @@
 import React from 'react';
-import { Container, Typography, Link } from '@mui/material';
+import { Container, Typography, Link, Button } from '@mui/material';
 import BannerImg from '../img/IMG_1550.jpeg';
 
 import githubIcon from '../img/github-icon.png';
 import linkedInIcon from '../img/linkedIn-icon.png';
 
 import { Box } from '@mui/system';
-import ContactForm from '../components/ContactForm';
+import { MailOutline } from '@mui/icons-material';
+// import ContactForm from '../components/ContactForm';
 
 const ContactPage = () => {
   return (
@@ -60,10 +61,22 @@ const ContactPage = () => {
           @Kelsey-Hall23
         </Link>
       </Box>
-      <Typography variant="h4" color="secondary" className="secondary-title">
-        Let's Chat
-      </Typography>
-      <ContactForm />
+      <Box>
+        <Typography variant="h4" color="secondary" className="secondary-title">
+          Let's Chat
+        </Typography>
+
+        <Button
+          href="mailto:hallkelsey23@gmail.com"
+          variant="contained"
+          color="secondary"
+          sx={{ fontSize: '14px' }}
+        >
+          Email Me <MailOutline sx={{ padding: '0 5px' }} fontSize="medium" />
+        </Button>
+      </Box>
+
+      {/*<ContactForm />*/}
     </Container>
   );
 };

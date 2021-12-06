@@ -6,6 +6,8 @@ import businessCard2 from '../projects/businessCard-Back.png';
 import GCFront from '../projects/giftcertificate-front.jpg';
 import GCBack from '../projects/giftcertificate-back.jpg';
 import BBKWebsite from '../projects/beautyByKayleneFigmaMockup.png';
+import BBKWebsiteDesktop from '../projects/BBKMobile.png';
+import BBKWebsiteMobile from '../projects/BBKDesktop.png';
 
 const projects = [
   {
@@ -46,7 +48,7 @@ const projects = [
         content: [
           {
             title: 'Website',
-            imgs: [],
+            imgs: [BBKWebsiteDesktop, BBKWebsiteMobile],
             src: 'https://www.beautybykaylene.ca',
           },
         ],
