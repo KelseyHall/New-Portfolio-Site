@@ -25,9 +25,11 @@ export const NavList = () => {
 export const DisplayDesktop = () => {
   return (
     <Toolbar>
-      <Typography variant="h2" className="Logo">
-        Kelsey Hall's
-      </Typography>
+      <NavLink to="/" className="Logo">
+        <Typography variant="h2" className="Logo">
+          Kelsey Hall's
+        </Typography>
+      </NavLink>
 
       <ul className="NavFont Nav-List">
         <li className="Nav-item">

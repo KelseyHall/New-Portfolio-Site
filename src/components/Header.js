@@ -8,7 +8,7 @@ import {
 } from '@mui/material';
 import { Close, Menu } from '@mui/icons-material';
 import React, { useState, useEffect } from 'react';
-
+import { NavLink } from 'react-router-dom';
 import theme from '../StyleSheet/theme';
 import { NavList, DisplayDesktop } from './Header-Navs';
 
@@ -41,9 +41,11 @@ const Header = () => {
       setState((prevState) => ({ ...prevState, drawerOpen: false }));
     return (
       <Toolbar>
-        <Typography variant="h2" className="Logo">
-          Kelsey Hall's
-        </Typography>
+        <NavLink to="/" className="Logo">
+          <Typography variant="h2" className="Logo">
+            Kelsey Hall's
+          </Typography>
+        </NavLink>
         <IconButton
           size="large"
           edge="end"

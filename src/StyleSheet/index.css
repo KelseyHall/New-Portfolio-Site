@@ -34,6 +34,10 @@ code {
 .MuiTypography-root {
   font-family: 'ArialHBS' !important;
 }
+.max-width {
+  max-width: 1980px;
+  margin: 0 auto;
+}
 body::before {
   content: '';
   background-image: url('../img/background-leaves-top.png');
@@ -75,9 +79,11 @@ p {
 }
 .Logo {
   font-family: 'Amita' !important;
-
+  text-decoration: none;
+  color: #463301 !important;
   -webkit-text-stroke: 1px #ebecea !important;
 }
+
 .NavFont {
   font-family: 'ArialHBS' !important;
   /* font-weight: bold !important; */

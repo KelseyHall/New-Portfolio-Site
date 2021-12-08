@@ -9,7 +9,9 @@ ReactDOM.render(
   <React.StrictMode>
     <CssBaseline />
     <SimpleReactLightbox>
-      <App />
+      <div className="max-width">
+        <App />
+      </div>
     </SimpleReactLightbox>
   </React.StrictMode>,
   document.getElementById('root')

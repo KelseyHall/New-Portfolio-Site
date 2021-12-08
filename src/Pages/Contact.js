@@ -27,7 +27,7 @@ const ContactPage = () => {
       <Box
         sx={{
           display: 'flex',
-          flexDirection: { xs: 'column', sm: 'row' },
+          flexDirection: { sm: 'column', md: 'row' },
         }}
         className="contact-socials"
       >
@@ -38,27 +38,29 @@ const ContactPage = () => {
           variant="body1"
           color="inherit"
           href="https://github.com/KelseyHall"
+          target="_blank"
           underline="none"
           className="align-content-center"
-          sx={{ padding: { xs: '0 5px', md: '0 25px' } }}
+          sx={{ padding: { xs: '10px 0', md: '0 25px' } }}
         >
           <img src={githubIcon} className="contact-social-icons" alt="github" />
-          @KelseyHall
+          <span>@KelseyHall</span>
         </Link>
         <Link
           variant="body1"
           color="inherit"
           href="https://www.linkedin.com/in/kelsey-hall23/"
+          target="_blank"
           underline="none"
           className="align-content-center"
-          sx={{ padding: { xs: '0 10px', sm: '0 20px' } }}
+          sx={{ padding: { xs: '10px 0', md: '0 25px' } }}
         >
           <img
             src={linkedInIcon}
             className="contact-social-icons"
             alt="github"
           />
-          @Kelsey-Hall23
+          <span>@Kelsey-Hall23</span>
         </Link>
       </Box>
       <Box>
@@ -70,7 +72,7 @@ const ContactPage = () => {
           href="mailto:hallkelsey23@gmail.com"
           variant="contained"
           color="secondary"
-          sx={{ fontSize: '14px' }}
+          sx={{ fontSize: '14px', margin: '20px 0' }}
         >
           Email Me <MailOutline sx={{ padding: '0 5px' }} fontSize="medium" />
         </Button>
