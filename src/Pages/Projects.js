@@ -127,7 +127,7 @@ const ProjectsPage = () => {
       <Typography
         variant="body1"
         sx={{ textAlign: 'center' }}
-      >{`Knowledge in Javascript, React.js, CSS, Sass, HTML, Wordpress, MailChimp`}</Typography>
+      >{`Knowledge in JavaScript, React.js, CSS, Sass, HTML, WordPress, MailChimp`}</Typography>
       <Grid container spacing={2}>
         {coding.map((item) => DisplayProjects(item))}
       </Grid>
