@@ -9,6 +9,10 @@ import BBKWebsite from '../projects/beautyByKayleneFigmaMockup.png';
 import BBKWebsiteDesktop from '../projects/BBKMobile.png';
 import BBKWebsiteMobile from '../projects/BBKDesktop.png';
 
+import TodoAppThumbnail from '../projects/todoApp.png';
+import TodoAppDesktop from '../projects/todo-app-desktop.png';
+import TodoAppMobile from '../projects/todo-app-mobile.png';
+
 const projects = [
   {
     design: [
@@ -50,6 +54,18 @@ const projects = [
             title: 'Website',
             imgs: [BBKWebsiteDesktop, BBKWebsiteMobile],
             src: 'https://www.beautybykaylene.ca',
+          },
+        ],
+      },
+      {
+        title: 'React Todo App',
+        description: 'Simple todo app using react',
+        img: TodoAppThumbnail,
+        content: [
+          {
+            title: 'Todo App mobile and desktop',
+            imgs: [TodoAppMobile, TodoAppDesktop],
+            src: 'https://react-todo-app-kelseyh.netlify.app',
           },
         ],
       },
