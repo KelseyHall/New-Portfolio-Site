@@ -60,8 +60,8 @@ const GalleryPage = () => {
               rows={item.rows || 1}
             >
               <img
-                {...srcset(item.img, 121, item.rows, item.cols)}
-                alt={item.title}
+                {...srcset(item.img, item.altText, 121, item.rows, item.cols)}
+                alt={item.altText}
                 loading="lazy"
               />
             </ImageListItem>
