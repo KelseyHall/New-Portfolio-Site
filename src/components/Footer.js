@@ -45,7 +45,7 @@ const Footer = () => {
         underline="none"
         className="footer-copyright"
       >
-        Copyright 2021
+        Copyright 2022
       </Link>
     </Container>
   );
