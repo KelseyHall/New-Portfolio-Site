@@ -13,12 +13,18 @@ import TodoAppThumbnail from '../projects/todoApp.png';
 import TodoAppDesktop from '../projects/todo-app-desktop.png';
 import TodoAppMobile from '../projects/todo-app-mobile.png';
 
+import ZoeysCornerThumbnail from '../projects/ZoeysCorner.png';
+import ZoeysCornerMobile from '../projects/Zoeys-blog-mobile-figma.png';
+import ZoeysCornerTablet from '../projects/Zoeys-blog-tablet-figma.png';
+import ZoeysCornerDesktop from '../projects/Zoeys-blog-desktop-figma.png';
+
 const projects = [
   {
     design: [
       {
         title: 'Beauty by Kaylene',
-        description: 'about this project',
+        description:
+          'mobile esthetician services. Logo creation, business card etc',
         img: beautybyKayleneLogo,
         content: [
           {
@@ -39,6 +45,29 @@ const projects = [
           {
             title: 'website mock up',
             imgs: [BBKWebsite],
+            src: '',
+          },
+        ],
+      },
+      {
+        title: `Zoey's Corner`,
+        description:
+          'mock up blog project. Figma designs of mobile, tablet and desktop view',
+        img: ZoeysCornerThumbnail,
+        content: [
+          {
+            title: 'Website mockup on Figma, mobile view',
+            imgs: [ZoeysCornerMobile],
+            src: '',
+          },
+          {
+            title: 'Website mockup on Figma, tablet view',
+            imgs: [ZoeysCornerTablet],
+            src: '',
+          },
+          {
+            title: 'Website mockup on Figma, desktop view',
+            imgs: [ZoeysCornerDesktop],
             src: '',
           },
         ],
