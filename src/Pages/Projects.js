@@ -78,14 +78,24 @@ const DisplayProjects = ({ title, description, img, content }) => {
                   >
                     {title}
                   </Typography>
-                  {imgs.map((item) => (
-                    <img
-                      key={uuidv4()}
-                      src={item}
-                      className="project-sub-img"
-                      alt={title}
-                    />
-                  ))}
+                  <Box
+                    sx={{
+                      width: '100%',
+                      display: 'flex',
+                      flexDirection: { xs: 'column', sm: 'row' },
+                      alignItems: 'flex-start',
+                      flexWrap: 'wrap',
+                    }}
+                  >
+                    {imgs.map((item) => (
+                      <img
+                        key={uuidv4()}
+                        src={item}
+                        className="project-sub-img"
+                        alt={title}
+                      />
+                    ))}
+                  </Box>
                   {src ? (
                     <Button
                       sx={{ color: theme.palette.secondary.main }}
