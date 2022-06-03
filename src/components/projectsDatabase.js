@@ -80,9 +80,10 @@ const projects = [
         img: beautybyKayleneLogo,
         content: [
           {
-            title: 'Website',
+            title:
+              'Website- under work temporary showcase till launch. Client has put project on hold',
             imgs: [BBKWebsiteDesktop, BBKWebsiteMobile],
-            src: 'https://www.beautybykaylene.ca',
+            src: 'https://beauty-by-kaylene-production.netlify.app/',
           },
         ],
       },
