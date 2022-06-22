@@ -1,5 +1,3 @@
-// import tempImg from '../img/IMG_3475.jpeg';
-
 import beautybyKayleneLogo from '../projects/beautybykayleneLogo.jpg';
 import businessCard1 from '../projects/businessCard-Front.png';
 import businessCard2 from '../projects/businessCard-Back.png';
@@ -17,6 +15,8 @@ import ZoeysCornerThumbnail from '../projects/ZoeysCorner.png';
 import ZoeysCornerMobile from '../projects/Zoeys-blog-mobile-figma.png';
 import ZoeysCornerTablet from '../projects/Zoeys-blog-tablet-figma.png';
 import ZoeysCornerDesktop from '../projects/Zoeys-blog-desktop-figma.png';
+import ZoeysCorningCodeMobile from '../projects/ZoeysCornerPhone.png';
+import ZoeysCorningCodeDesktop from '../projects/ZoeysCornerDesktop.png';
 
 const projects = [
   {
@@ -96,6 +96,19 @@ const projects = [
             title: 'Todo App mobile and desktop',
             imgs: [TodoAppMobile, TodoAppDesktop],
             src: 'https://react-todo-app-kelseyh.netlify.app',
+          },
+        ],
+      },
+      {
+        title: `Zoey's Corner Blog`,
+        description:
+          'Mock blog site, working with Contentful for blog post. Using Api calls to display content.',
+        img: ZoeysCornerThumbnail,
+        content: [
+          {
+            title: 'Zoeys mobile and desktop',
+            imgs: [ZoeysCorningCodeMobile, ZoeysCorningCodeDesktop],
+            src: 'https://zoeys-corner-blogsite.netlify.app/',
           },
         ],
       },
