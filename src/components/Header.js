@@ -42,7 +42,11 @@ const Header = () => {
     return (
       <Toolbar>
         <NavLink to="/" className="Logo">
-          <Typography variant="h2" className="Logo">
+          <Typography
+            variant="h2"
+            style={{ fontFamily: 'Amita' }}
+            className="Logo"
+          >
             Kelsey Hall's
           </Typography>
         </NavLink>

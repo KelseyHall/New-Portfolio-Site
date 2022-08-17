@@ -31,7 +31,11 @@ const ContactPage = () => {
         }}
         className="contact-socials"
       >
-        <Typography variant="h4" color="secondary" className="secondary-title">
+        <Typography
+          variant="h4"
+          color="secondary"
+          style={{ fontFamily: 'Rancho' }}
+        >
           Other places to find me:
         </Typography>
         <Link
@@ -64,7 +68,11 @@ const ContactPage = () => {
         </Link>
       </Box>
       <Box>
-        <Typography variant="h4" color="secondary" className="secondary-title">
+        <Typography
+          variant="h4"
+          color="secondary"
+          style={{ fontFamily: 'Rancho' }}
+        >
           Let's Chat
         </Typography>
 

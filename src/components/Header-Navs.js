@@ -10,9 +10,6 @@ export const NavList = () => {
         <NavLink to="/">Home</NavLink>
       </ListItem>
       <ListItem className="Nav-item">
-        <NavLink to="/gallery">Gallery</NavLink>
-      </ListItem>
-      <ListItem className="Nav-item">
         <NavLink to="/projects">Projects</NavLink>
       </ListItem>
       <ListItem className="Nav-item">
@@ -26,7 +23,11 @@ export const DisplayDesktop = () => {
   return (
     <Toolbar>
       <NavLink to="/" className="Logo">
-        <Typography variant="h2" className="Logo">
+        <Typography
+          variant="h2"
+          className="Logo"
+          style={{ fontFamily: 'Amita' }}
+        >
           Kelsey Hall's
         </Typography>
       </NavLink>
@@ -34,9 +35,6 @@ export const DisplayDesktop = () => {
       <ul className="NavFont Nav-List">
         <li className="Nav-item">
           <NavLink to="/">Home</NavLink>
-        </li>
-        <li className="Nav-item">
-          <NavLink to="/gallery">Gallery</NavLink>
         </li>
         <li className="Nav-item">
           <NavLink to="/projects">Projects</NavLink>

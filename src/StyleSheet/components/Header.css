@@ -1,9 +1,3 @@
-.App-header {
-  background: none !important;
-  padding: 3% 0;
-  box-shadow: none !important;
-}
-
 .Nav-List {
   list-style: none;
   display: flex;
@@ -12,27 +6,27 @@
 }
 .Nav-item a {
   padding: 0 5px;
-  color: #463301 !important;
+  color: #463301;
   text-decoration: none;
   font-weight: 500;
-  /* -webkit-text-stroke: 0.5px #ebecea !important; */
-  font-size: 1.4rem !important;
+  /* -webkit-text-stroke: 0.5px #ebecea ; */
+  font-size: 1.4rem;
 }
 
-.Nav-item .active {
-  font-weight: bolder !important;
-  color: #592015 !important;
+ul .Nav-item a.active {
+  font-weight: bolder;
+  color: #592015;
 }
 .App-header .MuiToolbar-root {
   justify-content: space-between;
 }
 
 /* .MuiDrawer-paper {
-  background-color: #c8cdc1 !important;
+  background-color: #c8cdc1;
 } */
 .MuiDrawer-paper .Nav-item {
-  flex-direction: column !important;
-  align-items: center !important;
+  flex-direction: column;
+  align-items: center;
   border-bottom: #463301 1px solid;
   width: 70%;
   margin: 0 auto;

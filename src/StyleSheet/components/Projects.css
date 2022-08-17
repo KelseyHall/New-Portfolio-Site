@@ -1,8 +1,8 @@
 .code-title {
-  font-family: 'ArialHBS' !important;
+  font-family: 'ArialHBS';
 }
 .design-title {
-  font-family: 'Rancho' !important;
+  font-family: 'Rancho';
 }
 .project-subtitle {
   padding: 20px 0 5px;
@@ -14,9 +14,6 @@
   align-items: flex-start;
   margin: 0 auto;
 }
-.project-buttons {
-  font-weight: bold !important;
-}
 
 .project-sub-img {
   padding: 5px;
@@ -26,7 +23,7 @@
 }
 
 .MuiCard-root {
-  height: 100% !important;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -15,6 +15,37 @@ const theme = createTheme({
       contrastText: '#F6F6F6',
     },
   },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: `@font-face {
+          font-family: 'ArialHBS';
+          src: url('./fonts/ArialHB.ttc') format('TrueType');
+        },
+        @font-face {
+          font-family: 'Amita';
+          src: url('./fonts/Amita/Amita-Bold.ttf') format('TrueType');
+        },@font-face {
+          font-family: 'Rancho';
+          src: url('./fonts/Rancho/Rancho-Regular.ttf') format('truetype');
+        }
+        `,
+    },
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          background: 'none',
+          padding: '3% 0',
+          boxShadow: 'none',
+        },
+      },
+    },
+  },
+  typography: {
+    fontFamily: ['ArialHBS'],
+    body1: {
+      fontSize: '1.2rem',
+    },
+  },
 });
 
 export default theme;
