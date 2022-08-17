@@ -20,13 +20,6 @@ const theme = createTheme({
       styleOverrides: `@font-face {
           font-family: 'ArialHBS';
           src: url('./fonts/ArialHB.ttc') format('TrueType');
-        },
-        @font-face {
-          font-family: 'Amita';
-          src: url('./fonts/Amita/Amita-Bold.ttf') format('TrueType');
-        },@font-face {
-          font-family: 'Rancho';
-          src: url('./fonts/Rancho/Rancho-Regular.ttf') format('truetype');
         }
         `,
     },
