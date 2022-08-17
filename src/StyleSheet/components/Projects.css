@@ -1,9 +1,9 @@
 .code-title {
   font-family: 'ArialHBS';
 }
-.design-title {
+/* .design-title {
   font-family: 'Rancho';
-}
+} */
 .project-subtitle {
   padding: 20px 0 5px;
 }
@@ -26,7 +26,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
 }

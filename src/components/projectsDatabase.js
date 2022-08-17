@@ -81,9 +81,23 @@ const projects = [
         content: [
           {
             title:
-              'Website- under work temporary showcase till launch. Client has put project on hold',
+              'Website- client has put on hold indefinitely, used as example now.',
             imgs: [BBKWebsiteDesktop, BBKWebsiteMobile],
             src: 'https://beauty-by-kaylene-production.netlify.app/',
+          },
+        ],
+      },
+
+      {
+        title: `Zoey's Corner Blog`,
+        description: 'Mock blog site.',
+        img: ZoeysCornerThumbnail,
+        content: [
+          {
+            title:
+              'Working with Contentful for blog post. Using Api calls to display content.',
+            imgs: [ZoeysCorningCodeMobile, ZoeysCorningCodeDesktop],
+            src: 'https://zoeys-corner-blogsite.netlify.app/',
           },
         ],
       },
@@ -93,22 +107,9 @@ const projects = [
         img: TodoAppThumbnail,
         content: [
           {
-            title: 'Todo App mobile and desktop',
+            title: 'Todo App personal project',
             imgs: [TodoAppMobile, TodoAppDesktop],
             src: 'https://react-todo-app-kelseyh.netlify.app',
-          },
-        ],
-      },
-      {
-        title: `Zoey's Corner Blog`,
-        description:
-          'Mock blog site, working with Contentful for blog post. Using Api calls to display content.',
-        img: ZoeysCornerThumbnail,
-        content: [
-          {
-            title: 'Zoeys mobile and desktop',
-            imgs: [ZoeysCorningCodeMobile, ZoeysCorningCodeDesktop],
-            src: 'https://zoeys-corner-blogsite.netlify.app/',
           },
         ],
       },

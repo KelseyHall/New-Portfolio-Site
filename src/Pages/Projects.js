@@ -137,7 +137,7 @@ const ProjectsPage = () => {
       <Typography
         variant="body1"
         sx={{ textAlign: 'center' }}
-      >{`Knowledge in JavaScript, React.js, CSS, Sass, HTML, WordPress, MailChimp`}</Typography>
+      >{`Knowledge in JavaScript, React.js, CSS, Sass, HTML, Material UI, Tailwind, WordPress, MailChimp`}</Typography>
       <Grid container spacing={2}>
         {coding.map((item) => DisplayProjects(item))}
       </Grid>
@@ -145,6 +145,7 @@ const ProjectsPage = () => {
         variant="h4"
         color={theme.palette.primary.contrastText}
         className="section-title design-title"
+        style={{ fontFamily: 'Rancho' }}
       >
         Design
       </Typography>
