@@ -32,7 +32,7 @@ const DisplayProjects = ({ title, description, img, content }) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <Grid key={uuidv4()} item xs={12} /*sm={6} md={4}*/>
+    <Grid key={uuidv4()} item xs={12} sm={6} md={4}>
       <Card>
         <CardMedia component="img" height="140" image={img} alt="Temp" />
         <CardContent>
@@ -53,8 +53,8 @@ const DisplayProjects = ({ title, description, img, content }) => {
               color: theme.palette.secondary.main,
               display: 'flex',
               margin: '0 auto',
+              fontWeight: 'bold',
             }}
-            className="project-buttons"
             onClick={handleOpen}
           >
             See Project

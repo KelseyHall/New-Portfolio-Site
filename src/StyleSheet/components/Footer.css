@@ -3,6 +3,7 @@
   /* background-color: #979386; */
   /* position: absolute; */
   bottom: 0;
+  padding-bottom: 10px;
   width: 100vw;
   max-height: 100px;
 }
@@ -14,6 +15,6 @@
   max-height: 25px;
   opacity: 0.8;
 }
-.footer-copyright {
-  padding-bottom: 10px !important;
-}
+/* .footer-copyright {
+  padding-bottom: 10px;
+} */

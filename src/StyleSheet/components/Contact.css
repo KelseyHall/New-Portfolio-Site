@@ -15,8 +15,8 @@
   /* padding: 0 10px; */
 }
 .MuiFilledInput-root {
-  background-color: #f7f6f680 !important;
+  background-color: #f7f6f680;
 }
 .MuiFilledInput-root:before {
-  border-bottom: none !important;
+  border-bottom: none;
 }
