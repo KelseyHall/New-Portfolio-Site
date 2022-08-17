@@ -32,8 +32,44 @@ export const AboutMeSection = () => {
         className="About-Me-Selfie float-left"
       />
       <Typography variant="body1" color="primary.contrastText">
-        {`Let’s start with a little bit about me. 11 years ago I took Multimedia Design at Durham College. This program gave me a wide look at all aspects of media. I enhanced my passion for photography, photo manipulation  and created a love for website creation. I have used my design skills to create business cards, gift certificates, electronic newsletters and more. Life has a way of taking you through twist and turns. Stepping away from the field, only to start a new job that leads to them needing help getting their business on the map. I took a break from learning the newest coding and design software to explore the world. Covid-19 created an opportunity for me to reflect and realize I wanted to put my time and effort learning all the new tricks of the trade. I look forward to expanding my knowledge and working with a company to grow. 
-        Check out my projects page for more details on what languages and softwares I use.`}
+        <span className="bold-text-question">Hi!</span> Let's start with the
+        technical.
+        <br />
+        <span className="bold-text-question">
+          What position am I looking for:
+        </span>{' '}
+        Junior Frontend web developer.
+        <span className="bold-text-question">
+          {' '}
+          What coding languages am I comfortable with:
+        </span>{' '}
+        React.js, Javascript, HTML, CSS, Material UI, Tailwind and Contentful.{' '}
+        <span className="bold-text-question">Currently learning:</span>{' '}
+        Typescript.{' '}
+        <span className="bold-text-question">What am I up to: </span>Continually
+        taking more courses and working on personal projects for hands on
+        experience.
+        <br /> <br />
+        <span className="bold-text-question">Design skills:</span> created
+        logos, business cards, gift certificates, electronic newsletters and
+        website designs.{' '}
+        <span className="bold-text-question">Design software:</span> Photoshop,
+        Figma, and illustrator.
+        <br /> <br />
+        <span className="bold-text-question">Education:</span>
+        I went to school for Multimedia Design at Durham College in 2011-2013.
+        Clearly there is a gap in time. I have spent the last couple years
+        taking many online programming courses and working on personal projects
+        to bring my skillsets back up to date.
+        <br /> <br />
+        <span className="bold-text-question">
+          {' '}
+          Ok, now a little more personal.
+        </span>
+        I enjoy photography, playing with my dog Zoey, motorcycle rides and
+        traveling. I believe strongly in a healthy work/life balance and look
+        forward to working along a company with similar views. My ideal would be
+        to work fully remote, however open to a hybrid work environment.
       </Typography>
     </Container>
   );

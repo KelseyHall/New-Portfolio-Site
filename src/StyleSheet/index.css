@@ -87,3 +87,8 @@ h4.section-title {
   display: flex;
   align-items: center;
 }
+
+.bold-text-question {
+  font-weight: bold;
+  display: block;
+}
