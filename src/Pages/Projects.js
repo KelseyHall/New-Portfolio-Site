@@ -66,7 +66,10 @@ const DisplayProjects = ({ title, description, img, content }) => {
       <Modal open={open} onClose={handleClose}>
         <Box sx={styleModal}>
           <Button
-            sx={{ color: theme.palette.secondary.main }}
+            sx={{
+              color: theme.palette.secondary.main,
+              '&:hover': { textDecoration: 'underline' },
+            }}
             onClick={handleClose}
           >
             close
@@ -109,7 +112,10 @@ const DisplayProjects = ({ title, description, img, content }) => {
               >
                 {src ? (
                   <Button
-                    sx={{ color: theme.palette.secondary.main }}
+                    sx={{
+                      color: theme.palette.secondary.main,
+                      '&:hover': { textDecoration: 'underline' },
+                    }}
                     target="_blank"
                     className="project-buttons"
                     href={src}
@@ -119,7 +125,10 @@ const DisplayProjects = ({ title, description, img, content }) => {
                 ) : null}
                 {github ? (
                   <Button
-                    sx={{ color: theme.palette.secondary.main }}
+                    sx={{
+                      color: theme.palette.secondary.main,
+                      '&:hover': { textDecoration: 'underline' },
+                    }}
                     target="_blank"
                     className="project-buttons"
                     href={github}

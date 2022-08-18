@@ -45,7 +45,10 @@ const ContactPage = () => {
           target="_blank"
           underline="none"
           className="align-content-center"
-          sx={{ padding: { xs: '10px 0', md: '0 25px' } }}
+          sx={{
+            padding: { xs: '10px 0', md: '0 25px' },
+            '&:hover': { textDecoration: 'underline' },
+          }}
         >
           <img src={githubIcon} className="contact-social-icons" alt="github" />
           <span>@KelseyHall</span>
@@ -57,7 +60,10 @@ const ContactPage = () => {
           target="_blank"
           underline="none"
           className="align-content-center"
-          sx={{ padding: { xs: '10px 0', md: '0 25px' } }}
+          sx={{
+            padding: { xs: '10px 0', md: '0 25px' },
+            '&:hover': { textDecoration: 'underline' },
+          }}
         >
           <img
             src={linkedInIcon}
