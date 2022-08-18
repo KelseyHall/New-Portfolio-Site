@@ -12,7 +12,10 @@
   /* -webkit-text-stroke: 0.5px #ebecea ; */
   font-size: 1.4rem;
 }
-
+.Nav-item a:hover {
+  color: #592015;
+  text-decoration: underline;
+}
 ul .Nav-item a.active {
   font-weight: bolder;
   color: #592015;
