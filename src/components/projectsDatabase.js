@@ -18,6 +18,8 @@ import ZoeysCornerDesktop from '../projects/Zoeys-blog-desktop-figma.png';
 import ZoeysCorningCodeMobile from '../projects/ZoeysCornerPhone.png';
 import ZoeysCorningCodeDesktop from '../projects/ZoeysCornerDesktop.png';
 
+import ColorPalatteThumbnail from '../projects/thumbnail-MCP.jpg';
+
 const projects = [
   {
     design: [
@@ -98,6 +100,19 @@ const projects = [
               'Working with Contentful for blog post. Using Api calls to display content.',
             imgs: [ZoeysCorningCodeMobile, ZoeysCorningCodeDesktop],
             src: 'https://zoeys-corner-blogsite.netlify.app/',
+          },
+        ],
+      },
+      {
+        title: `My Color Palatte`,
+        description: 'Color Palatte Creator v1',
+        img: ColorPalatteThumbnail,
+        content: [
+          {
+            title:
+              'Ability to create multiple color schemes and to save onto computer. v1- using local storage, v2- sign in database coming soon. Created with React.js and tailwind',
+            imgs: [ColorPalatteThumbnail],
+            src: 'https://mycolourpalatte.netlify.app/',
           },
         ],
       },
