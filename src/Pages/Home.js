@@ -49,27 +49,30 @@ export const AboutMeSection = () => {
         <span className="bold-text-question">What am I up to: </span>Continually
         taking more courses and working on personal projects for hands on
         experience.
-        <br /> <br />
+      </Typography>
+
+      <Typography variant="body1" color="primary.contrastText">
         <span className="bold-text-question">Design skills:</span> created
         logos, business cards, gift certificates, electronic newsletters and
         website designs.{' '}
         <span className="bold-text-question">Design software:</span> Photoshop,
-        Figma, and illustrator.
-        <br /> <br />
-        <span className="bold-text-question">Education:</span>
-        I went to school for Multimedia Design at Durham College in 2011-2013.
-        Clearly there is a gap in time. I have spent the last couple years
-        taking many online programming courses and working on personal projects
-        to bring my skillsets back up to date.
-        <br /> <br />
+        Figma, and Illustrator.
+      </Typography>
+      <Typography variant="body1" color="primary.contrastText">
+        <span className="bold-text-question">Education:</span>I went to school
+        for Multimedia Design at Durham College in 2011-2013. Clearly there is a
+        gap in time. I have spent the last couple years taking many online
+        programming courses and working on personal projects to bring my
+        skillsets back up to date.
+      </Typography>
+      <Typography variant="body1" color="primary.contrastText">
         <span className="bold-text-question">
           {' '}
           Ok, now a little more personal.
         </span>
         I enjoy photography, playing with my dog Zoey, motorcycle rides and
         traveling. I believe strongly in a healthy work/life balance and look
-        forward to working along a company with similar views. My ideal would be
-        to work fully remote, however open to a hybrid work environment.
+        forward to working along a company with similar views.
       </Typography>
     </Container>
   );

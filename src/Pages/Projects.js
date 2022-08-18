@@ -9,6 +9,7 @@ import {
   Button,
   Box,
   Modal,
+  CardActionArea,
 } from '@mui/material';
 import theme from '../StyleSheet/theme';
 import projects from '../components/projectsDatabase';
@@ -33,103 +34,104 @@ const DisplayProjects = ({ title, description, img, content }) => {
   const handleClose = () => setOpen(false);
   return (
     <Grid key={uuidv4()} item xs={12} sm={6} md={4}>
-      <Card>
-        <CardMedia component="img" height="140" image={img} alt="Temp" />
-        <CardContent>
-          <Typography
-            gutterBottom
-            variant="h5"
-            component="div"
-            color={theme.palette.primary.contrastText}
-          >
-            {title}
-          </Typography>
-          <Typography variant="body2" color={theme.palette.secondary.dark}>
-            {description}
-          </Typography>
+      <Card sx={{ border: `1px solid ${theme.palette.primary.main}` }}>
+        <CardActionArea onClick={handleOpen}>
+          <CardMedia component="img" height="140" image={img} alt="Temp" />
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              color={theme.palette.primary.contrastText}
+            >
+              {title}
+            </Typography>
+            <Typography variant="body2" color={theme.palette.secondary.dark}>
+              {description}
+            </Typography>
 
-          <Button
-            sx={{
-              color: theme.palette.secondary.main,
-              display: 'flex',
-              margin: '0 auto',
-              fontWeight: 'bold',
-            }}
-            onClick={handleOpen}
-          >
-            See Project
-          </Button>
-          <Modal open={open} onClose={handleClose}>
-            <Box sx={styleModal}>
-              <Button
-                sx={{ color: theme.palette.secondary.main }}
-                onClick={handleClose}
-              >
-                close
-              </Button>
-              {content.map(({ title, imgs, src, github }) => (
-                <Box key={uuidv4()} className="project-contents">
-                  <Typography
-                    gutterBottom
-                    variant="h5"
-                    className="project-subtitle"
-                    component="div"
-                    color={theme.palette.secondary.dark}
-                  >
-                    {title}
-                  </Typography>
-                  <Box
-                    sx={{
-                      width: '100%',
-                      display: 'flex',
-                      flexDirection: { xs: 'column', sm: 'row' },
-                      alignItems: 'flex-start',
-                      flexWrap: 'wrap',
-                    }}
-                  >
-                    {imgs.map((item) => (
-                      <img
-                        key={uuidv4()}
-                        src={item}
-                        className="project-sub-img"
-                        alt={title}
-                      />
-                    ))}
-                  </Box>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      width: '100%',
-                    }}
-                  >
-                    {src ? (
-                      <Button
-                        sx={{ color: theme.palette.secondary.main }}
-                        target="_blank"
-                        className="project-buttons"
-                        href={src}
-                      >
-                        view live
-                      </Button>
-                    ) : null}
-                    {github ? (
-                      <Button
-                        sx={{ color: theme.palette.secondary.main }}
-                        target="_blank"
-                        className="project-buttons"
-                        href={github}
-                      >
-                        git repository
-                      </Button>
-                    ) : null}
-                  </Box>
-                </Box>
-              ))}
-            </Box>
-          </Modal>
-        </CardContent>
+            <Button
+              sx={{
+                color: theme.palette.secondary.main,
+                display: 'flex',
+                margin: '0 auto',
+                fontWeight: 'bold',
+              }}
+            >
+              See Project
+            </Button>
+          </CardContent>
+        </CardActionArea>
       </Card>
+      <Modal open={open} onClose={handleClose}>
+        <Box sx={styleModal}>
+          <Button
+            sx={{ color: theme.palette.secondary.main }}
+            onClick={handleClose}
+          >
+            close
+          </Button>
+          {content.map(({ title, imgs, src, github }) => (
+            <Box key={uuidv4()} className="project-contents">
+              <Typography
+                gutterBottom
+                variant="h5"
+                className="project-subtitle"
+                component="div"
+                color={theme.palette.secondary.dark}
+              >
+                {title}
+              </Typography>
+              <Box
+                sx={{
+                  width: '100%',
+                  display: 'flex',
+                  flexDirection: { xs: 'column', sm: 'row' },
+                  alignItems: 'flex-start',
+                  flexWrap: 'wrap',
+                }}
+              >
+                {imgs.map((item) => (
+                  <img
+                    key={uuidv4()}
+                    src={item}
+                    className="project-sub-img"
+                    alt={title}
+                  />
+                ))}
+              </Box>
+              <Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  width: '100%',
+                }}
+              >
+                {src ? (
+                  <Button
+                    sx={{ color: theme.palette.secondary.main }}
+                    target="_blank"
+                    className="project-buttons"
+                    href={src}
+                  >
+                    view live
+                  </Button>
+                ) : null}
+                {github ? (
+                  <Button
+                    sx={{ color: theme.palette.secondary.main }}
+                    target="_blank"
+                    className="project-buttons"
+                    href={github}
+                  >
+                    git repository
+                  </Button>
+                ) : null}
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Modal>
     </Grid>
   );
 };
@@ -154,7 +156,7 @@ const ProjectsPage = () => {
       </Typography>
       <Typography
         variant="body1"
-        sx={{ textAlign: 'center' }}
+        sx={{ textAlign: 'center', marginBottom: '1rem' }}
       >{`Knowledge in JavaScript, React.js, CSS, Sass, HTML, Material UI, Tailwind, WordPress, MailChimp`}</Typography>
       <Grid container spacing={2}>
         {coding.map((item) => DisplayProjects(item))}
@@ -169,7 +171,7 @@ const ProjectsPage = () => {
       </Typography>
       <Typography
         variant="body1"
-        sx={{ textAlign: 'center' }}
+        sx={{ textAlign: 'center', marginBottom: '1rem' }}
       >{`Knowledge in Photoshop, Illustrator, Figma`}</Typography>
       <Grid container spacing={2}>
         {design.map((item) => DisplayProjects(item))}
