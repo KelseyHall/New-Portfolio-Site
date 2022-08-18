@@ -67,7 +67,7 @@ const DisplayProjects = ({ title, description, img, content }) => {
               >
                 close
               </Button>
-              {content.map(({ title, imgs, src }) => (
+              {content.map(({ title, imgs, src, github }) => (
                 <Box key={uuidv4()} className="project-contents">
                   <Typography
                     gutterBottom
@@ -96,16 +96,34 @@ const DisplayProjects = ({ title, description, img, content }) => {
                       />
                     ))}
                   </Box>
-                  {src ? (
-                    <Button
-                      sx={{ color: theme.palette.secondary.main }}
-                      target="_blank"
-                      className="project-buttons"
-                      href={src}
-                    >
-                      view live
-                    </Button>
-                  ) : null}
+                  <Box
+                    sx={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      width: '100%',
+                    }}
+                  >
+                    {src ? (
+                      <Button
+                        sx={{ color: theme.palette.secondary.main }}
+                        target="_blank"
+                        className="project-buttons"
+                        href={src}
+                      >
+                        view live
+                      </Button>
+                    ) : null}
+                    {github ? (
+                      <Button
+                        sx={{ color: theme.palette.secondary.main }}
+                        target="_blank"
+                        className="project-buttons"
+                        href={github}
+                      >
+                        git repository
+                      </Button>
+                    ) : null}
+                  </Box>
                 </Box>
               ))}
             </Box>
