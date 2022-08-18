@@ -45,7 +45,7 @@ export const AboutMeSection = () => {
         </span>{' '}
         React.js, JavaScript, HTML, CSS, Material UI, Tailwind and Contentful.{' '}
         <span className="bold-text-question">Currently learning:</span>{' '}
-        Typescript.{' '}
+        TypeScript.{' '}
         <span className="bold-text-question">What am I up to: </span>Continually
         taking more courses and working on personal projects for hands on
         experience.
