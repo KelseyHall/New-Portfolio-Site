@@ -41,9 +41,9 @@ export const AboutMeSection = () => {
         Junior Frontend web developer.
         <span className="bold-text-question">
           {' '}
-          What coding languages am I comfortable with:
+          What technologies am I comfortable with:
         </span>{' '}
-        React.js, Javascript, HTML, CSS, Material UI, Tailwind and Contentful.{' '}
+        React.js, JavaScript, HTML, CSS, Material UI, Tailwind and Contentful.{' '}
         <span className="bold-text-question">Currently learning:</span>{' '}
         Typescript.{' '}
         <span className="bold-text-question">What am I up to: </span>Continually
