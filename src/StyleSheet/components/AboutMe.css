@@ -1,4 +1,10 @@
 .About-Me-Selfie {
   width: 50%;
-  margin: 5px 10px 10px 0;
+  margin: 5px 15px 10px 0;
+}
+.About-Me-Container p {
+  margin: 30px 0;
+}
+.About-Me-Container .bold-text-question {
+  margin-top: 10px;
 }
