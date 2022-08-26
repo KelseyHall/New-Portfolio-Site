@@ -124,17 +124,40 @@ const DisplayProjects = ({ title, description, img, content }) => {
                   </Button>
                 ) : null}
                 {github ? (
-                  <Button
-                    sx={{
-                      color: theme.palette.secondary.main,
-                      '&:hover': { textDecoration: 'underline' },
-                    }}
-                    target="_blank"
-                    className="project-buttons"
-                    href={github}
-                  >
-                    git repository
-                  </Button>
+                  github[0].name ? (
+                    //has multiple repositories
+                    <div style={{ display: 'flex' }}>
+                      <Typography variant="h6" color="secondary.main">
+                        Git Repository:
+                      </Typography>
+                      {github.map((each) => (
+                        <Button
+                          sx={{
+                            color: theme.palette.secondary.main,
+                            '&:hover': { textDecoration: 'underline' },
+                          }}
+                          target="_blank"
+                          className="project-buttons"
+                          href={each.code}
+                        >
+                          {each.name}
+                        </Button>
+                      ))}
+                    </div>
+                  ) : (
+                    //only one repository
+                    <Button
+                      sx={{
+                        color: theme.palette.secondary.main,
+                        '&:hover': { textDecoration: 'underline' },
+                      }}
+                      target="_blank"
+                      className="project-buttons"
+                      href={github}
+                    >
+                      git repository
+                    </Button>
+                  )
                 ) : null}
               </Box>
             </Box>
