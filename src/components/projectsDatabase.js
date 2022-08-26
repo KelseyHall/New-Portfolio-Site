@@ -128,7 +128,16 @@ const projects = [
             title: 'Todo App personal project',
             imgs: [TodoAppMobile, TodoAppDesktop],
             src: 'https://react-todo-app-kelseyh.netlify.app',
-            github: 'https://github.com/KelseyHall/todoApp',
+            github: [
+              {
+                name: 'JavaScript',
+                code: 'https://github.com/KelseyHall/todoApp',
+              },
+              {
+                name: 'TypeScript',
+                code: `https://github.com/KelseyHall/TodoApp-v2-TypeScript`,
+              },
+            ],
           },
         ],
       },
