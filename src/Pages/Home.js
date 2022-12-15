@@ -38,17 +38,15 @@ export const AboutMeSection = () => {
         <span className="bold-text-question">
           What position am I looking for:
         </span>{' '}
-        Junior Frontend web developer.
+        Frontend Web Developer.
         <span className="bold-text-question">
           {' '}
           What technologies am I comfortable with:
         </span>{' '}
-        React.js, JavaScript, HTML, CSS, Material UI, Tailwind and Contentful.{' '}
+        React.js, JavaScript, TypeScript, Next.js, HTML, CSS, Material UI, Tailwind and Contentful.{' '}
         <span className="bold-text-question">Currently learning:</span>{' '}
-        TypeScript.{' '}
-        <span className="bold-text-question">What am I up to: </span>Continually
-        taking more courses and working on personal projects for hands on
-        experience.
+        Node.js{' '}
+        <span className="bold-text-question">What am I up to: </span>Working as a volunteer for Empowered Futures. I am a team lead and google admin. Currently managing a team of developers in creating a mentorship platform.
       </Typography>
 
       <Typography variant="body1" color="primary.contrastText">
