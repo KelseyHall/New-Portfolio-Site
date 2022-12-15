@@ -189,7 +189,7 @@ const ProjectsPage = () => {
       <Typography
         variant="body1"
         sx={{ textAlign: 'center', marginBottom: '1rem' }}
-      >{`Knowledge in JavaScript, React.js, CSS, Sass, HTML, Material UI, Tailwind, WordPress, MailChimp`}</Typography>
+      >{`Knowledge in JavaScript, TypeScript, React.js, Next.js, CSS, Sass, HTML, Material UI, Tailwind`}</Typography>
       <Grid container spacing={2}>
         {coding.map((item) => DisplayProjects(item))}
       </Grid>

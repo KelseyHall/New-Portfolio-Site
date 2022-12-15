@@ -20,6 +20,12 @@ import ZoeysCorningCodeDesktop from '../projects/ZoeysCornerDesktop.png';
 
 import ColorPalatteThumbnail from '../projects/thumbnail-MCP.jpg';
 
+import EFMainThumbnail from '../projects/EFBanner_Main.jpg';
+import EFMainDesktop from '../projects/EF_Main_Desktop.png';
+import EfMainMobile from '../projects/EF_Main_Mobile.png';
+
+import EFMentorThumbnail from '../projects/EFBannerMentor.jpg';
+
 const projects = [
   {
     design: [
@@ -76,6 +82,34 @@ const projects = [
       },
     ],
     coding: [
+      {
+        title: 'Empowered Futures',
+        description: 'Empowered Futures Main website',
+        img:EFMainThumbnail,
+        content: [
+          {
+            title:
+              'Implemeneted website as per the design teams designs. Using Next.Js',
+            imgs: [EFMainDesktop, EfMainMobile],
+            src: 'https://www.empoweredfutures.ca',
+            github: '',
+          },
+        ],
+      },
+      {
+        title: 'Empowered Futures',
+        description: 'Empowered Futures Mentorship Platform',
+        img:EFMentorThumbnail,
+        content: [
+          {
+            title:
+              'Project ongoing, not live to public at this time. Mentorship Platform, run by volunteers. Public Release 2023',
+            imgs: [],
+            src: '',
+            github: '',
+          },
+        ],
+      },
       {
         title: 'Beauty by Kaylene',
         description: 'Mobile Spa responsive website',
