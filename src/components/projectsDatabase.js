@@ -89,7 +89,7 @@ const projects = [
         content: [
           {
             title:
-              'Implemeneted website as per the design teams designs. Using Next.Js',
+              'Implemented website as per the design teams designs. Using Next.Js',
             imgs: [EFMainDesktop, EfMainMobile],
             src: 'https://www.empoweredfutures.ca',
             github: '',
