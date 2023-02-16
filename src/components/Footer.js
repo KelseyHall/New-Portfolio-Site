@@ -45,7 +45,7 @@ const Footer = () => {
         underline="none"
         className="footer-copyright"
       >
-        © 2022 Kelsey Hall
+        copyright © 2023 Kelsey Hall
       </Link>
     </Container>
   );
