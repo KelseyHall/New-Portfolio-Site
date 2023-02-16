@@ -88,7 +88,7 @@ const ContactPage = () => {
           color="secondary"
           sx={{ fontSize: '14px', margin: '20px 0' }}
         >
-          Email Me <MailOutline sx={{ padding: '0 5px' }} fontSize="medium" />
+          <span style={{'padding-top':'5px'}}>Email Me</span> <MailOutline sx={{ padding: '0 5px' }} fontSize="medium" />
         </Button>
       </Box>
 

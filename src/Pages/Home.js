@@ -46,7 +46,7 @@ export const AboutMeSection = () => {
         React.js, JavaScript, TypeScript, Next.js, HTML, CSS, Material UI, Tailwind and Contentful.{' '}
         <span className="bold-text-question">Currently learning:</span>{' '}
         Node.js{' '}
-        <span className="bold-text-question">What am I up to: </span>Working as a volunteer for Empowered Futures. I am a team lead and google admin. Currently managing a team of developers in creating a mentorship platform.
+        <span className="bold-text-question">What am I up to: </span>Working for Empowered Futures. I am a team lead and google admin. Currently managing a team of developers in creating a mentorship platform. 
       </Typography>
 
       <Typography variant="body1" color="primary.contrastText">
