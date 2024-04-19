@@ -39,9 +39,7 @@ export const AboutMeSection = () => {
         className="About-Me-Selfie float-left"
       />
       <Typography variant="body1" color="primary.contrastText">
-        <span className="bold-text-question">Hi!</span> Let's start with the
-        technical.
-        <br />
+        <span className="bold-text-question">Hi!</span>
         <span className="bold-text-question">
           What position am I looking for:
         </span>{' '}
@@ -61,12 +59,12 @@ export const AboutMeSection = () => {
       </Typography>
 
       <Typography variant="body1" color="primary.contrastText">
-        <span className="bold-text-question">Design skills:</span> created
-        website responsive designs, logos, business cards, gift certificates and
-        electronic newsletters.{' '}
+        <span className="bold-text-question">Design skills:</span> creating
+        responsive designs across many platforms.{' '}
         <span className="bold-text-question">Design software:</span> Photoshop,
         Figma, and Illustrator.
       </Typography>
+      {/*
       <Typography variant="body1" color="primary.contrastText">
         <span className="bold-text-question">Education:</span>Multimedia Design
         at Durham College in 2011-2013. I am continually taking courses to stay
@@ -81,6 +79,7 @@ export const AboutMeSection = () => {
         traveling. I believe strongly in a healthy work/life balance and look
         forward to working along a company with similar views.
       </Typography>
+       */}
     </Container>
   );
 };
