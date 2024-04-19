@@ -7,7 +7,7 @@ import linkedInIcon from '../img/linkedIn-icon.png';
 
 import { Box } from '@mui/system';
 import { MailOutline } from '@mui/icons-material';
-import ContactForm from '../components/ContactForm';
+//import ContactForm from '../components/ContactForm';
 
 const ContactPage = () => {
   return (
