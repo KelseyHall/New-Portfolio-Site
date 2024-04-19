@@ -92,7 +92,7 @@ const ContactPage = () => {
         </Button>
       </Box>
 
-      <ContactForm />
+{/*<ContactForm />*/}
     </Container>
   );
 };
