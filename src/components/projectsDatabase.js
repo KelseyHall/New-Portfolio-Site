@@ -26,9 +26,74 @@ import EfMainMobile from '../projects/EF_Main_Mobile.png';
 
 import EFMentorThumbnail from '../projects/EFBannerMentor.jpg';
 
+import ClubhouseThumbnail from '../projects/CHO-Logo.png';
+import BelleHavenCountryClub from '../projects/CHO-Sites/bellehavencc-clubhouseonline-e3-home-2024-04-18-09.png';
+import BrynMawrCountryClub from '../projects/CHO-Sites/brynmawrcountryclub-2024-04-18-09.png';
+import ChatmossCountryClub from '../projects/CHO-Sites/chatmosscc-clubhouseonline-e3-club-Home-2024-04-18.png';
+import ExampleSiteHome from '../projects/CHO-Sites/Example-clubhouseonline-e3-club-Home-2024-04-18-10.png';
+import ExampleSitePage from '../projects/CHO-Sites/Example-clubhouseonline-e3-club-Sample-2024-04-18-10.png';
+import Landingsygtc from '../projects/CHO-Sites/landingsygtc-Home-2024-04-18-09.png';
+import Oldfieldsc from '../projects/CHO-Sites/oldfieldsc-Home-2024-04-18-09.png';
+import TavistockCC from '../projects/CHO-Sites/tavistockcc-clubhouseonline-e3-Home-2024-04-18-09.png';
+import TheRanchmensClub from '../projects/CHO-Sites/theranchmensclub-clubhouseonline-Home-2024-04-18-09.png';
+import TorontoSkiClub from '../projects/CHO-Sites/torontoskiclub-clubhouseonline-e3-2024-04-18-09.png';
+import TorontoSkiClubMobileHeader from '../projects/CHO-Sites/TorontoSkiClub-Mobile-stickyheader.png';
+import TorontoSkiClubMobileTS from '../projects/CHO-Sites/torontoSkiClub-Mobile-TS.png';
+import Wampanoag from '../projects/CHO-Sites/Wampanoag-clubhouseonline-e3-club-2024-04-18-09.png';
+
 const projects = [
   {
     design: [
+      {
+        title: `Clubhouse Online`,
+        description:
+          'Multiple club design for different clients sites that i have created. All websites built on Kentico framework.',
+        img: ClubhouseThumbnail,
+        content: [
+          {
+            title: 'Belle Haven Country Club - Not Live',
+            imgs: [BelleHavenCountryClub],
+            src: '',
+          },
+          {
+            title: 'Chatmoss Country Club - Not Live',
+            imgs: [ChatmossCountryClub],
+            src: '',
+          },
+
+          {
+            title: 'Landings Yacht, Golf and Tennis Club - Not Live',
+            imgs: [Landingsygtc],
+            src: '',
+          },
+          {
+            title: 'Oldfield Club - Not Live',
+            imgs: [Oldfieldsc],
+            src: '',
+          },
+          {
+            title: 'Tavistock Country Club - Not Live',
+            imgs: [TavistockCC],
+            src: '',
+          },
+          {
+            title: `The Ranchmen's Club - Not live`,
+            imgs: [TheRanchmensClub],
+            src: '',
+          },
+
+          {
+            title: 'Wampanoag - Mock up - Not live',
+            imgs: [Wampanoag],
+            src: '',
+          },
+          {
+            title: 'Example Mock up - Not used',
+            imgs: [ExampleSiteHome, ExampleSitePage],
+            src: '',
+          },
+        ],
+      },
       {
         title: 'Beauty by Kaylene',
         description:
@@ -83,9 +148,31 @@ const projects = [
     ],
     coding: [
       {
+        title: `Clubhouse Online`,
+        description:
+          'Designed and Coded multiple clubs sites. All websites built on the Kentico framework. Disclaimer:live site may be slightly different then image as these sites get handed to the clients to update',
+        img: ClubhouseThumbnail,
+        content: [
+          {
+            title: 'Bryn Mawr Country Club - Live 2024',
+            imgs: [BrynMawrCountryClub],
+            src: 'https://www.brynmawrcountryclub.com/',
+          },
+          {
+            title: 'Toronto Ski Club - Live 2023',
+            imgs: [
+              TorontoSkiClub,
+              TorontoSkiClubMobileHeader,
+              TorontoSkiClubMobileTS,
+            ],
+            src: 'https://www.torontoskiclub.on.ca/',
+          },
+        ],
+      },
+      {
         title: 'Empowered Futures',
         description: 'Empowered Futures Main website',
-        img:EFMainThumbnail,
+        img: EFMainThumbnail,
         content: [
           {
             title:
@@ -99,11 +186,11 @@ const projects = [
       {
         title: 'Empowered Futures',
         description: 'Empowered Futures Mentorship Platform',
-        img:EFMentorThumbnail,
+        img: EFMentorThumbnail,
         content: [
           {
             title:
-              'Project ongoing, not live to public at this time. Mentorship Platform, run by volunteers. Public Release 2023',
+              'Project ongoing, unfortunately, was not made public before I left in 2023.',
             imgs: [],
             src: '',
             github: '',

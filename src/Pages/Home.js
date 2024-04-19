@@ -10,7 +10,14 @@ export const HomeBannerImg = () => {
       <img
         alt="beautiful landscape of tea plantation in malaysia"
         src={LandscapeImg}
-        style={{ width: '100vw', maxWidth: '1920px', marginBottom: '5%' }}
+        style={{
+          width: '100vw',
+          maxWidth: '1920px',
+          marginBottom: '5%',
+          display: 'flex',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+        }}
       />
     </div>
   );
@@ -32,9 +39,7 @@ export const AboutMeSection = () => {
         className="About-Me-Selfie float-left"
       />
       <Typography variant="body1" color="primary.contrastText">
-        <span className="bold-text-question">Hi!</span> Let's start with the
-        technical.
-        <br />
+        <span className="bold-text-question">Hi!</span>
         <span className="bold-text-question">
           What position am I looking for:
         </span>{' '}
@@ -43,25 +48,27 @@ export const AboutMeSection = () => {
           {' '}
           What technologies am I comfortable with:
         </span>{' '}
-        React.js, JavaScript, TypeScript, Next.js, HTML, CSS, Material UI, Tailwind and Contentful.{' '}
-        <span className="bold-text-question">Currently learning:</span>{' '}
-        Node.js{' '}
-        <span className="bold-text-question">What am I up to: </span>Working for Empowered Futures. I am a team lead and google admin. Currently managing a team of developers in creating a mentorship platform. 
+        React.js, JavaScript, TypeScript, Next.js, HTML, CSS, jQuery, Material
+        UI, Tailwind and Contentful.{' '}
+        <span className="bold-text-question">
+          Currently learning:
+        </span> Node.js{' '}
+        <span className="bold-text-question">What am I up to: </span>Working for
+        Jonas Software in the Clubhouse Online Branch. Working as a Web Designer
+        / Frontend Developer creating websites within the Kentico framework.
       </Typography>
 
       <Typography variant="body1" color="primary.contrastText">
-        <span className="bold-text-question">Design skills:</span> created
-        logos, business cards, gift certificates, electronic newsletters and
-        website designs.{' '}
+        <span className="bold-text-question">Design skills:</span> creating
+        responsive designs across many platforms.{' '}
         <span className="bold-text-question">Design software:</span> Photoshop,
         Figma, and Illustrator.
       </Typography>
+      {/*
       <Typography variant="body1" color="primary.contrastText">
-        <span className="bold-text-question">Education:</span>I went to school
-        for Multimedia Design at Durham College in 2011-2013. Clearly there is a
-        gap in time. I have spent the last couple years taking many online
-        programming courses and working on personal projects to bring my
-        skillsets back up to date.
+        <span className="bold-text-question">Education:</span>Multimedia Design
+        at Durham College in 2011-2013. I am continually taking courses to stay
+        up to date with the industry.
       </Typography>
       <Typography variant="body1" color="primary.contrastText">
         <span className="bold-text-question">
@@ -72,6 +79,7 @@ export const AboutMeSection = () => {
         traveling. I believe strongly in a healthy work/life balance and look
         forward to working along a company with similar views.
       </Typography>
+       */}
     </Container>
   );
 };
