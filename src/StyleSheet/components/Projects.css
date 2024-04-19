@@ -21,6 +21,9 @@
   max-height: 300px;
   max-width: 100%;
 }
+.project-sub-img:hover {
+  max-height: 100%;
+}
 
 .MuiCard-root {
   height: 100%;
