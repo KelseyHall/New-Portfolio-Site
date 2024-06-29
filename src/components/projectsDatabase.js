@@ -55,27 +55,7 @@ const projects = [
             imgs: [BelleHavenCountryClub],
             src: '',
           },
-          {
-            title: 'Chatmoss Country Club - Not Live',
-            imgs: [ChatmossCountryClub],
-            src: '',
-          },
 
-          {
-            title: 'Landings Yacht, Golf and Tennis Club - Not Live',
-            imgs: [Landingsygtc],
-            src: '',
-          },
-          {
-            title: 'Oldfield Club - Not Live',
-            imgs: [Oldfieldsc],
-            src: '',
-          },
-          {
-            title: 'Tavistock Country Club - Not Live',
-            imgs: [TavistockCC],
-            src: '',
-          },
           {
             title: `The Ranchmen's Club - Not live`,
             imgs: [TheRanchmensClub],
@@ -166,6 +146,27 @@ const projects = [
               TorontoSkiClubMobileTS,
             ],
             src: 'https://www.torontoskiclub.on.ca/',
+          },
+          {
+            title: 'Chatmoss Country Club - Live 2024',
+            imgs: [ChatmossCountryClub],
+            src: 'https://chatmosscc.org/',
+          },
+
+          {
+            title: 'Landings Yacht, Golf and Tennis Club - Live 2024',
+            imgs: [Landingsygtc],
+            src: 'https://www.landingsygtc.com/',
+          },
+          {
+            title: 'Oldfield Club - Live 2024',
+            imgs: [Oldfieldsc],
+            src: 'https://oldfieldsc.com/',
+          },
+          {
+            title: 'Tavistock Country Club - Live 2024',
+            imgs: [TavistockCC],
+            src: 'https://www.tavistockcc.org/',
           },
         ],
       },
